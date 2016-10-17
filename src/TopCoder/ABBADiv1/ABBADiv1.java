@@ -28,6 +28,7 @@ package TopCoder.ABBADiv1;
  - The length of target will be between 2 and 50, inclusive.
  - target will be longer than initial.
  - Each character in initial and each character in target will be either 'A' or 'B'.
+
  Examples
  0)
  "A"
@@ -62,4 +63,67 @@ package TopCoder.ABBADiv1;
  * Created by edwardwang on 10/13/16.
  */
 public class ABBADiv1 {
+    private static final String POSSIBLE = "Possible";
+    private static final String IMPOSSIBLE = "Impossible";
+
+    public static void main(String[] args){
+        String initial = "A";
+        String target = "ABBA";
+        System.out.println(canObtain(initial, target));
+    }
+
+
+    public static String canObtain(String initial, String target){
+        int counter = 0;
+        char initialChar, targetChar;
+        while(counter < target.length()){
+            if(counter < initial.length()){
+                initialChar = initial.charAt(counter);
+            }else{
+                initialChar = '\u0000';
+            }
+            targetChar = target.charAt(counter);
+            if(initialChar!=targetChar || initialChar == '\u0000'){
+                switch (targetChar){
+                    case 'A':
+                        initial += 'A';
+                        break;
+                    case 'B':
+                        initial += 'B';
+                        initial = flipString(initial);
+                        break;
+                }
+            }
+            System.out.println("Initial: "+initial);
+            System.out.println("Target: "+target);
+            System.out.println();
+            counter ++;
+        }
+        if(isEqual(initial, target)){
+            return POSSIBLE;
+        }else{
+            return IMPOSSIBLE;
+        }
+    }
+
+    private static boolean isEqual(String initial, String target){
+        try {
+            for(int i=0;i<target.length();i++){
+                if(initial.charAt(i) != target.charAt(i)){
+                    return false;
+                }
+            }
+            return true;
+        }catch (ArrayIndexOutOfBoundsException e){
+            return false;
+        }
+    }
+
+    private static String flipString(String string){
+        String temp = "";
+        for(int i=string.length()-1;i>=0;i--){
+            temp += string.charAt(i);
+        }
+        return temp;
+    }
 }
