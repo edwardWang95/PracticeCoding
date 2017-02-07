@@ -2,7 +2,7 @@ package LeetCode;
 
 import java.util.ArrayList;
 
-class Test{
+class KeyBoard500Test{
     private static String[] input = {"Hello","Alaska","Dad","Peace"};
     //private static String[] input = {"Dad"};
     public static void main(String[] args){
