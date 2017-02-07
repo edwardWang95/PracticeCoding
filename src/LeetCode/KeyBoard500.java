@@ -28,7 +28,7 @@ public class KeyBoard500 {
 
         for(String word: words) {
             //System.out.println("Word:" +word);
-            if (isValid(word)){
+            if (isValid(word.toLowerCase())){
                 //System.out.println("Is Valid");
                 foundWords.add(word);
             }
@@ -63,15 +63,15 @@ public class KeyBoard500 {
 
     private char[] getRow(char c){
         for(int i=0;i<row1.length;i++){
-            if(c == row1[i] || (c+32)==row1[i]) {
+            if(c == row1[i]) {
                 //System.out.println("Row1");
                 return row1;
             }
-            if(c == row2[i] || (c+32)==row2[i]) {
+            if(c == row2[i]) {
                 //System.out.println("Row2");
                 return row2;
             }
-            if(c == row3[i] || (c+32)==row3[i]){
+            if(c == row3[i]){
                 //System.out.println("Row3");
                 return row3;
             }
