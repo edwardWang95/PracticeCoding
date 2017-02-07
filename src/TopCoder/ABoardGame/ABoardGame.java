@@ -83,13 +83,18 @@ public class ABoardGame {
     public static void main(String[]args){
         ABoardGame aBoardGame = new ABoardGame();
         String[] currBoard = {".....A", "......", "..A...", "...B..", "......", "......"};
+        aBoardGame.whoWon(currBoard);
     }
 
     private String whoWon(String[] currBoard){
+        board = new Board(currBoard.length,currBoard.length);
+        board.printBoard();
         if(isScoreBoardValid(currBoard)){
+            /*
             board = new Board(currBoard.length,currBoard.length);
-
+            board.printBoard();*/
         }
+        return "no one";
     }
 
     /**
@@ -124,42 +129,76 @@ public class ABoardGame {
 
     }
 
+    /**
+     * Board:
+     * -2D array of cell objects
+     */
     private class Board{
         private Cell[][] board;
         private int n, sideLength;
+        private Cell topLeft, topRight, botLeft;
         public Board(int row, int col){
-            n = row;
-            sideLength = row;
+            n = row/2;
+            sideLength = row-1;
             board = new Cell[row][col];
+            setupBoard();
+        }
+        private void printBoard(){
+            for(int y=0;y<=sideLength;y++){
+                for(int x=0;x<=sideLength;x++){
+                    System.out.print(board[x][y].getValue()+" ");
+                }
+                System.out.println();
+            }
+        }
+        private void setupBoard(){
             initBoard();
+            for(int i=0;i<n;i++){
+                initCorners(i);
+                initEdges(i);
+            }
         }
         private void initBoard(){
-            for(int i=n;i>=0;i--){
-                initTop(i);
+            //initiate all cells in board
+            for(int i=0;i<=sideLength;i++){
+                for(int j=0;j<=sideLength;j++){
+                    board[i][j] = new Cell(i,j,0);
+                }
             }
         }
-        private void genLoop(int n){
-            initTop(n);
-            initSides(n);
-            initBottom(n);
-        }
+        private void initCorners(int i){
+            topLeft = board[i][i];
+            topRight = board[sideLength-i][i];
+            botLeft = board[i][sideLength-i];
 
+
+            System.out.println(topLeft.toString());
+            System.out.println(topRight.toString());
+            System.out.println(botLeft.toString());
+
+        }
+        private void initEdges(int value){
+            initTop(n-value);
+            initSides(n-value);
+            initBottom(n-value);
+        }
         //n represents the current number from the for loop
-        private void initTop(int n){
-            for(int i=0;i<2*n;i++){
-                
+        private void initTop(int value){
+            for(int i=0;i<=sideLength-value;i++){
+                board[topLeft.getX()+i][topLeft.getY()].setValue(value);
+                //System.out.println((topLeft.getX()+i)+" "+(topLeft.getY()));
             }
         }
-
-        private void initSides(int n){
-            for(int i=0;i<(2*n)-1;i++){
-
+        private void initSides(int value){
+            for(int i=1;i<=sideLength-1-value;i++){
+                board[topLeft.getX()][topLeft.getY()+i].setValue(value);
+                System.out.println(topRight.getX()+" "+topRight.getY()+i);
+                board[topRight.getX()][topRight.getY()+i].setValue(value);
             }
         }
-
-        private void initBottom(int n){
-            for(int i=0;i<(2*n)-2;i++){
-
+        private void initBottom(int value){
+            for(int i=1;i<=sideLength-2-value;i++){
+                board[botLeft.getX()+i][botLeft.getY()].setValue(value);
             }
         }
 
@@ -170,10 +209,22 @@ public class ABoardGame {
             board[row][col].setValue(value);
         }
 
+        /**
+         * Cell:
+         * -Coordinate (X,Y)
+         * -Owner
+         * -Value
+         */
         private class Cell{
             private String owner = ".";
-            private int value = 0;
-            public void setOwner(String owner{
+            private int value,x,y;
+            public Cell(){}
+            public Cell(int x, int y, int value){
+                this.x = x;
+                this.y = y;
+                this.value = value;
+            }
+            public void setOwner(String owner){
                 this.owner = owner;
             }
             public void setValue(int value){
@@ -184,6 +235,18 @@ public class ABoardGame {
             }
             public int getValue(){
                 return value;
+            }
+
+            public int getX() {
+                return x;
+            }
+
+            public int getY() {
+                return y;
+            }
+            @Override
+            public String toString(){
+                return "X: "+getX()+"\tY: "+getY()+"\tValue: "+getValue()+"\tOwner: "+getOwner();
             }
         }
 
