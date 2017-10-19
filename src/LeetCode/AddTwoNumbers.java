@@ -15,7 +15,6 @@ public class AddTwoNumbers {
     public static void main(String [] args){
         ListNode l1 = new ListNode(5);
         ListNode l2 = new ListNode(5);
-
         printListNodes(addTwoNumbers(l1,l2));
     }
     static void printListNodes(ListNode listNode){
