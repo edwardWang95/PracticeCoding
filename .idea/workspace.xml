@@ -4,6 +4,7 @@
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/Derangement.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
 =======
@@ -12,7 +13,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 =======
 >>>>>>> Finished AddTwoNumbers
+=======
+>>>>>>> Fix changes to AddTwoNumbers
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" afterPath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Leetcode-2
     </list>
     <ignored path="PracticeCoding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,11 +101,19 @@
       <file leaf-file-name="AddTwoNumbers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1848">
               <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding>
                 <element signature="e#2052#2053#0" expanded="true" />
                 <element signature="e#2082#2083#0" expanded="true" />
+=======
+            <state relative-caret-position="363">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding>
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1841#1842#0" expanded="true" />
+>>>>>>> Leetcode-2
               </folding>
             </state>
           </provider>
@@ -718,6 +733,7 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2695458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -725,6 +741,12 @@
 =======
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2695458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 >>>>>>> Finished AddTwoNumbers
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2695458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Leetcode-2
+>>>>>>> Fix changes to AddTwoNumbers
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -889,6 +911,7 @@
     <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="561">
           <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding>
@@ -1052,12 +1075,21 @@
         <state relative-caret-position="363">
           <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
 =======
+=======
+>>>>>>> Fix changes to AddTwoNumbers
         <state relative-caret-position="1848">
           <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
 >>>>>>> Finished AddTwoNumbers
           <folding>
             <element signature="e#2052#2053#0" expanded="true" />
             <element signature="e#2082#2083#0" expanded="true" />
+=======
+        <state relative-caret-position="363">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+>>>>>>> Leetcode-2
           </folding>
         </state>
       </provider>
