@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/Derangement.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
 =======
@@ -30,6 +31,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> MergeTwoBinaryTrees
 >>>>>>> MergeTwoBinaryTrees
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/Multisets.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" afterPath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
     </list>
     <ignored path="PracticeCoding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +82,8 @@
       <file leaf-file-name="AddTwoNumbers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="1749">
+              <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
                 <element signature="e#2052#2053#0" expanded="true" />
                 <element signature="e#2082#2083#0" expanded="true" />
@@ -86,12 +92,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Derangement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Derangement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sandbox/Derangement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="495">
+              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Multisets.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sandbox/Multisets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2439">
+              <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <folding>
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#3526#3527#0" expanded="true" />
+                <element signature="e#3555#3556#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +120,7 @@
       <file leaf-file-name="SandboxMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sandbox/SandboxMain.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="297">
               <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
 =======
@@ -138,6 +160,14 @@
 >>>>>>> MergeTwoBinaryTrees
               <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding />
+=======
+            <state relative-caret-position="528">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+              </folding>
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
             </state>
           </provider>
         </entry>
@@ -192,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
         <option value="$PROJECT_DIR$/src/Sandbox/Derangement.java" />
 =======
@@ -199,6 +230,11 @@
 =======
         <option value="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" />
 >>>>>>> MergeTwoBinaryTrees
+=======
+        <option value="$PROJECT_DIR$/src/Sandbox/Derangement.java" />
+        <option value="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
+        <option value="$PROJECT_DIR$/src/Sandbox/Multisets.java" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       </list>
     </option>
   </component>
@@ -231,8 +267,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,6 +403,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -712,8 +752,12 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+=======
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 =======
 =======
@@ -721,10 +765,17 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> Leetcode-2
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+=======
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2769918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2769918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,8 +783,14 @@
 =======
 >>>>>>> MergeTwoBinaryTrees
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -746,6 +803,7 @@
 >>>>>>> MergeTwoBinaryTrees
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
@@ -768,12 +826,17 @@
 =======
 >>>>>>> MergeTwoBinaryTrees
 >>>>>>> MergeTwoBinaryTrees
+=======
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2695458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4539801" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -781,6 +844,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -834,7 +900,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/LeetCode/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="638">
+=======
+        <state relative-caret-position="924">
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
           <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -844,7 +914,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/BattleShipsInABoard.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="396">
+=======
+        <state relative-caret-position="594">
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
@@ -852,12 +926,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+=======
+        <state relative-caret-position="1749">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/Derangement.java">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/SandboxMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
     <entry file="file://$PROJECT_DIR$/src/LeetCode/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1117,8 +1219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="1749">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding>
             <element signature="e#2052#2053#0" expanded="true" />
             <element signature="e#2082#2083#0" expanded="true" />
@@ -1126,16 +1228,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sandbox/SandboxMain.java">
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/Derangement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sandbox/Derangement.java">
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/SandboxMain.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="592">
           <caret line="40" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
 =======
@@ -1160,6 +1263,27 @@
 >>>>>>> Finished AddTwoNumbers
 =======
           <folding />
+=======
+        <state relative-caret-position="528">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/Multisets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2439">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+            <element signature="e#3555#3556#0" expanded="true" />
+          </folding>
+>>>>>>> Daily HW Problem: Multiset backtracking permutation
         </state>
       </provider>
     </entry>
