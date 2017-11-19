@@ -13,6 +13,17 @@ package LeetCode;
  */
 public class AddTwoNumbers {
     public static void main(String [] args){
+<<<<<<< HEAD
+=======
+        /*
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+        */
+>>>>>>> 9d3f4fc1d92ba6c9130d7e69493e0c024928d956
         ListNode l1 = new ListNode(5);
         ListNode l2 = new ListNode(5);
         printListNodes(addTwoNumbers(l1,l2));
