@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/Derangement.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
 =======
@@ -38,6 +39,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" afterPath="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
 >>>>>>> Daily HW Problem: Multiset backtracking permutation
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" afterPath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" />
+>>>>>>> 1e247aab1af50830bf1577f6303d8749ba8694c3
+>>>>>>> a077d8606c576bc1c91bc29c9ef9607c8ff12a06
     </list>
 =======
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="" />
@@ -73,9 +81,7 @@
             <state relative-caret-position="924">
 >>>>>>> 9d3f4fc1d92ba6c9130d7e69493e0c024928d956
               <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +157,18 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="AddTwoNumbers.java" pinned="false" current-in-tab="false">
+=======
+      <file leaf-file-name="MaximumBinaryTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding />
+=======
+      <file leaf-file-name="AddTwoNumbers.java" pinned="false" current-in-tab="true">
+>>>>>>> a077d8606c576bc1c91bc29c9ef9607c8ff12a06
         <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -233,6 +250,7 @@
                 <element signature="e#164#165#0" expanded="true" />
 >>>>>>> 9d3f4fc1d92ba6c9130d7e69493e0c024928d956
               </folding>
+>>>>>>> 1e247aab1af50830bf1577f6303d8749ba8694c3
             </state>
           </provider>
         </entry>
@@ -264,7 +282,11 @@
         <option value="$PROJECT_DIR$/src/LeetCode/KeyBoard500.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/BattleShipsInABoard.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java" />
+=======
         <option value="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -286,6 +308,9 @@
         <option value="$PROJECT_DIR$/src/Sandbox/SandboxMain.java" />
         <option value="$PROJECT_DIR$/src/Sandbox/Multisets.java" />
 >>>>>>> 9d3f4fc1d92ba6c9130d7e69493e0c024928d956
+=======
+>>>>>>> 1e247aab1af50830bf1577f6303d8749ba8694c3
+>>>>>>> a077d8606c576bc1c91bc29c9ef9607c8ff12a06
       </list>
     </option>
   </component>
@@ -458,9 +483,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="AddTwoNumbers.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
+=======
+              <option name="myItemId" value="MaximumBinaryTree.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracticeCoding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracticeCoding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> a077d8606c576bc1c91bc29c9ef9607c8ff12a06
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1235,9 +1284,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,9 +1292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,9 +1308,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,6 +1350,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,9 +1374,7 @@
 =======
         <state relative-caret-position="924">
           <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,6 +1386,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1401,6 +1450,7 @@
             <element signature="e#2052#2053#0" expanded="true" />
             <element signature="e#2082#2083#0" expanded="true" />
           </folding>
+>>>>>>> 1e247aab1af50830bf1577f6303d8749ba8694c3
         </state>
       </provider>
     </entry>
