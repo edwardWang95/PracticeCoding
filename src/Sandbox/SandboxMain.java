@@ -5,7 +5,11 @@ package Sandbox;
  */
 public class SandboxMain {
     public static void main(String[] args){
+<<<<<<< HEAD
         backtrackingSubsets();
+=======
+        dynamicProgrammingTest();
+>>>>>>> 9bc50a99434e05473d8f49d9a0a31a32528626f4
     }
 
     static void derangementTest(){
@@ -19,11 +23,30 @@ public class SandboxMain {
         Multisets multisets = new Multisets(test,NMax);
         multisets.printPermutations();
     }
+<<<<<<< HEAD
 
     static void backtrackingSubsets(){
         int k = 3;  //elements in a subset
         int n = 5;  //total numbers
         BacktrackingSubsets backtrackingSubsets = new BacktrackingSubsets(n,k);
         backtrackingSubsets.backtracking();
+=======
+    static void dynamicProgrammingTest(){
+        String X = "chocolate";
+        String Y = "chips";
+        String Z1 = "cchocohilaptes";
+        String Z2 = "chocochilatspe";
+        DyanmicProgramming dyanmicProgramming = new DyanmicProgramming();
+        System.out.println("Normal Programming");
+        dyanmicProgramming.setXYZ(X,Y,Z1);
+        System.out.println("Z1: " + dyanmicProgramming.isZCorrectNormal());
+        dyanmicProgramming.setXYZ(X,Y,Z2);
+        System.out.println("Z2: " + dyanmicProgramming.isZCorrectNormal());
+        System.out.println("Dynamic Programming");
+        dyanmicProgramming.setXYZ(X,Y,Z1);
+        //System.out.println("Z1: " + dyanmicProgramming.isZCorrectDynamicProgramming());
+        dyanmicProgramming.setXYZ(X,Y,Z2);
+        //System.out.println("Z2: " + dyanmicProgramming.isZCorrectDynamicProgramming());
+>>>>>>> 9bc50a99434e05473d8f49d9a0a31a32528626f4
     }
 }
