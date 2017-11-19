@@ -29,7 +29,7 @@ public class MaximumBinaryTree {
         TreeNode root = new TreeNode(nums[rootIndex]);
         for(int i=0;i<(rootIndex-1);i++){
             if(nums[i] != 0){
-                root.left
+
             }
             addNewNode(root.left, root, nums[i],root.val);
         }
@@ -73,10 +73,11 @@ public class MaximumBinaryTree {
     }
 }
 
+/*
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
     TreeNode(int x) { val = x; }
  }
-
+*/
