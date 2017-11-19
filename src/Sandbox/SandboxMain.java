@@ -5,7 +5,7 @@ package Sandbox;
  */
 public class SandboxMain {
     public static void main(String[] args){
-        multisetsTest();
+        backtrackingSubsets();
     }
 
     static void derangementTest(){
@@ -18,5 +18,12 @@ public class SandboxMain {
         int NMax = 6;
         Multisets multisets = new Multisets(test,NMax);
         multisets.printPermutations();
+    }
+
+    static void backtrackingSubsets(){
+        int k = 3;  //elements in a subset
+        int n = 5;  //total numbers
+        BacktrackingSubsets backtrackingSubsets = new BacktrackingSubsets(n,k);
+        backtrackingSubsets.backtracking();
     }
 }
