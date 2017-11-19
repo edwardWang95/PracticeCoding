@@ -5,7 +5,7 @@ package Sandbox;
  */
 public class SandboxMain {
     public static void main(String[] args){
-        multisetsTest();
+        editStrings();
     }
 
     static void derangementTest(){
@@ -18,5 +18,12 @@ public class SandboxMain {
         int NMax = 6;
         Multisets multisets = new Multisets(test,NMax);
         multisets.printPermutations();
+    }
+
+    static void editStrings(){
+        String m = "watch the movie raising arizona?";
+        String n = "watch da mets raze arizona?";
+        EditStrings editStrings = new EditStrings(m,n);
+        editStrings.dynamicProgramming();
     }
 }
