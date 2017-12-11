@@ -73,9 +73,6 @@ public class MaximumBinaryTree {
     }
 }
 
-<<<<<<< HEAD
-
-=======
 /*
 >>>>>>> 0dbd31760ff9356f7db1ec62f4b68881fb049ec1
 class TreeNode {
@@ -84,7 +81,5 @@ class TreeNode {
     TreeNode right;
     TreeNode(int x) { val = x; }
  }
-<<<<<<< HEAD
-=======
 */
->>>>>>> 0dbd31760ff9356f7db1ec62f4b68881fb049ec1
+
