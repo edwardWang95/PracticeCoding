@@ -28,7 +28,7 @@ public class LongestSubstring {
         for(int i =0;i<s.length();i++){
            c = (int)s.charAt(i);
            if(!map.containsKey(c)){
-               map.put(c,0);
+               //map.put(c,0);
                length++;
            }
         }
