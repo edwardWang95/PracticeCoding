@@ -21,18 +21,30 @@ import java.util.HashMap;
 public class LongestSubstring {
     public LongestSubstring(){}
     public int lengthOfLongestSubstring(String s) {
-        HashMap<String, Integer> map = new HashMap<>();
-        String temp = s.charAt(0)+"";
-        int length = 0;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int substringLength = 0;
+        int startChar = 0;
+        int endChar = 0;
+        if(s.length()==0){
+            return 0;
+        }
         int c;
         for(int i =0;i<s.length();i++){
            c = (int)s.charAt(i);
            if(!map.containsKey(c)){
-               //map.put(c,0);
-               length++;
+               map.put(c,0);
+               endChar = i;
+           }else{
+               if(endChar-startChar+1 > substringLength){
+                   substringLength = endChar-startChar + 1;
+               }
+               startChar = i;
+               //endChar = i+1;
+               map = new HashMap<>();
+               map.put(c,0);
            }
         }
-        return temp.length();
+        return substringLength;
     }
     public int lengthOfLongestSubstring2(String s) {
         int length = 0;
