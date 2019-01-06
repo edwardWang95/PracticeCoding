@@ -21,31 +21,65 @@ import java.util.HashMap;
 public class LongestSubstring {
     public LongestSubstring(){}
     public int lengthOfLongestSubstring(String s) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        String temp = "";
         int substringLength = 0;
         int startChar = 0;
         int endChar = 0;
         if(s.length()==0){
             return 0;
         }
-        int c;
-        for(int i =0;i<s.length();i++){
-           c = (int)s.charAt(i);
-           if(!map.containsKey(c)){
-               map.put(c,0);
+        char c;
+        for(int i=0;i<s.length();i++){
+           c = s.charAt(i);
+           if(!contains(temp,c)){
+               temp += c;
                endChar = i;
            }else{
-               if(endChar-startChar+1 > substringLength){
-                   substringLength = endChar-startChar + 1;
+               if((i+1 < s.length()) && s.charAt(i) == s.charAt(i+1)){
+                   startChar = i+1;
+               }else{
+                   startChar = getLocationOfFirstInstance(s.substring(startChar, s.length()-1),c) + 1;
                }
-               startChar = i;
-               //endChar = i+1;
-               map = new HashMap<>();
-               map.put(c,0);
+                /*
+               if(s.charAt(i+1) != s.charAt(i)){
+                   //startChar++;
+                   //startChar = startChar + getLocationOfDuplicate(s, c);
+                   startChar = getLocationOfFirstInstance(s.substring(startChar),c) + 1;
+               }else{
+                   startChar = i;
+               }
+               */
+               endChar = startChar;
+               i = startChar;
+               temp = s.charAt(i)+"";
            }
+            if(endChar-startChar + 1 > substringLength){
+                substringLength = endChar-startChar + 1;
+            }
+            System.out.println("Substring: "+temp);
+            //System.out.println(s.charAt(startChar)+"\t"+s.charAt(endChar));
         }
         return substringLength;
     }
+
+    private int getLocationOfFirstInstance(String s, char c){
+        for(int i =0;i<s.length();i++){
+            if(s.charAt(i)==c){
+                return i;
+            }
+        }
+        return 0;
+    }
+
+    private boolean contains(String s, char c){
+        for(int i =0;i<s.length();i++){
+            if(s.charAt(i)==c){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public int lengthOfLongestSubstring2(String s) {
         int length = 0;
         String temp = s.charAt(0)+"";

@@ -11,7 +11,8 @@ public class LeetCode {
 
     static void longestSubstring(){
         System.out.println("Longest Substring");
-        String test = "pwwkew";
+        String test = "abcabcbb";
+        String test2 = "ivqpsqbpqjogwnswtimdlbxcwgeaenwokndefetwpjenwwksgwxszuwxb";
         LongestSubstring longestSubstring = new LongestSubstring();
         System.out.println("Length of longest substring: "+longestSubstring.lengthOfLongestSubstring(test));
     }
