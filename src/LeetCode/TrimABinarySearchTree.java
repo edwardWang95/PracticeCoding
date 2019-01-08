@@ -91,11 +91,29 @@ public class TrimABinarySearchTree {
 }
 
 class TrimABinarySearchTreeSolution {
-    public TreeNode trimBST(TreeNode root, int L, int R)
+    public TreeNode trimBST(TreeNode node, int L, int R)
     {
-        TreeNode newTree = new TreeNode(root.val);
-
-        return newTree;
+        //base case of recursive statement
+        if(node == null) return null;
+        if(node.val < L || node.val > R) return null;
+        //less than
+        if(trimBST(node.left, L, R) == null) node.left = rightMostLeftTreeNode(node.left);
+        //greater than
+        if(trimBST(node.right, L, R) == null) node.right = leftMostRightTreeNode(node.right);
+        return node;
     }
-    
+
+    private TreeNode leftMostRightTreeNode(TreeNode node)
+    {
+        //start of with a null related base statement
+        if(node.left == null) return node;
+        return leftMostRightTreeNode(node.left);
+    }
+
+    private TreeNode rightMostLeftTreeNode(TreeNode node)
+    {
+        //start of with a null related base statement
+        if(node.right == null) return node;
+        return rightMostLeftTreeNode(node.right);
+    }
 }
