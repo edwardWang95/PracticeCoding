@@ -19,44 +19,63 @@ public class TrimABinarySearchTree {
         //Perform BST traversal and make sure each node is same on both trees
         public boolean isCorrect(TreeNode solution)
         {
+            return bstTraversal(output, solution);
+        }
 
+        /*
+        * First check if they are null. This is usually the base case.
+        *
+        * If not null then check their value.
+        *
+        * If using booleans can && between results of left and right of BST to return result.
+        * */
+        private boolean bstTraversal(TreeNode output, TreeNode solution)
+        {
+            //check if both are empty
+            if(output == null && solution == null) return true;
+            else if(output != null && solution != null)
+            {
+                //if not null for each, check their value and recursively continue search
+                return output.val == solution.val &&
+                        bstTraversal(output.left, solution.left) &&
+                        bstTraversal(output.right, solution.right);
+            }
             return false;
         }
 
-        //recursive traversal inorder of both trees to make sure they have same values
-        private boolean bstTraversal(TreeNode output, TreeNode solution)
+        //my incorrect way of checking this
+        private boolean bstTraversalIncorrect(TreeNode output, TreeNode solution)
         {
-            //base check for recursive statements
+            //if one is null and other is not
             if(output == null && solution != null ||
             output != null && solution == null) return false;
-            else if(output.val != solution.val) return false;
+            //if not same value
+            if(output.val != solution.val) return false;
             //in order traversal part
-            bstTraversal(output.left, output.left);
-            bstTraversal(output.right, output.right);
-            return true;
+            return bstTraversalIncorrect(output.left, solution.left) &&
+                    bstTraversalIncorrect(output.right, solution.right);
         }
     }
     public static void main(String[] args)
     {
-        testTrimABinarySearchTreeTestIsCorrect();
-        /*
+        //testTrimABinarySearchTreeTestIsCorrect();
         TrimABinarySearchTreeTest test = buildTree1();
         TrimABinarySearchTreeSolution solution = new TrimABinarySearchTreeSolution();
         System.out.println("Test1 - " +
-                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ? "Correct" : "Incorrect"));
-        */
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
     }
 
     //Create test tree nodes to confirm isCorrect functionality of TrimABinarySearchTreeTest
     private static void testTrimABinarySearchTreeTestIsCorrect()
     {
-        int L = 1, R = 2;
         TreeNode inputTree = new TreeNode(1);
         inputTree.right = new TreeNode(2);
         TreeNode outputTree = new TreeNode(1);
         outputTree.right = new TreeNode(2);
-        TrimABinarySearchTreeTest trimABinarySearchTreeTest = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
-        System.out.println("Testing test isCorrect Method output: " + trimABinarySearchTreeTest.isCorrect(outputTree));
+        TrimABinarySearchTreeTest test =
+                new TrimABinarySearchTreeTest(inputTree, outputTree, 1, 1);
+        System.out.println("Testing test isCorrect Method output: " + test.isCorrect(inputTree));
     }
 
     private static TrimABinarySearchTreeTest buildTree1()
@@ -78,4 +97,5 @@ class TrimABinarySearchTreeSolution {
 
         return newTree;
     }
+    
 }

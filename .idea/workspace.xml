@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +37,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="630">
+              <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+              <folding>
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,7 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/edwardwang/Documents/Projects/Personal/PracticeCoding/src/LeetCode/LeetCode.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546913851196" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546915084719" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -187,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IslandPerimeter">
+  <component name="RunManager" selected="Application.TrimABinarySearchTree">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -285,13 +286,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SandboxMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sandbox.SandboxMain" />
+    <configuration name="TrimABinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.TrimABinarySearchTree" />
       <module name="PracticeCoding" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sandbox.*" />
+          <option name="PATTERN" value="LeetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,19 +364,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BrailleTest" />
-      <item itemvalue="Application.Braille" />
-      <item itemvalue="Application.IslandPerimeter" />
       <item itemvalue="Application.LeetCode" />
-      <item itemvalue="Application.SandboxMain" />
+      <item itemvalue="Application.Braille" />
+      <item itemvalue="Application.BrailleTest" />
+      <item itemvalue="Application.IslandPerimeter" />
+      <item itemvalue="Application.TrimABinarySearchTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrimABinarySearchTree" />
         <item itemvalue="Application.IslandPerimeter" />
         <item itemvalue="Application.BrailleTest" />
         <item itemvalue="Application.Braille" />
         <item itemvalue="Application.LeetCode" />
-        <item itemvalue="Application.SandboxMain" />
       </list>
     </recent_temporary>
   </component>
@@ -392,6 +393,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1259" y="23" width="1301" height="1417" extended-state="0" />
     <editor active="true" />
@@ -406,14 +416,14 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22415094" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22415094" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34037736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981133" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.329602" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32830188" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -603,8 +613,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        <state relative-caret-position="630">
+          <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
