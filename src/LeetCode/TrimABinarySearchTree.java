@@ -58,12 +58,11 @@ public class TrimABinarySearchTree {
     }
     public static void main(String[] args)
     {
-        //testTrimABinarySearchTreeTestIsCorrect();
-        TrimABinarySearchTreeTest test = buildTree1();
         TrimABinarySearchTreeSolution solution = new TrimABinarySearchTreeSolution();
-        System.out.println("Test1 - " +
-                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
-                        "Correct" : "Incorrect"));
+        //Tests
+        testLessThanExample(solution);
+        testGreaterThanExample(solution);
+        leetCodeExample1(solution);
     }
 
     //Create test tree nodes to confirm isCorrect functionality of TrimABinarySearchTreeTest
@@ -78,7 +77,7 @@ public class TrimABinarySearchTree {
         System.out.println("Testing test isCorrect Method output: " + test.isCorrect(inputTree));
     }
 
-    private static TrimABinarySearchTreeTest buildTree1()
+    private static void leetCodeExample1(TrimABinarySearchTreeSolution solution)
     {
         int L = 1, R = 2;
         TreeNode inputTree = new TreeNode(1);
@@ -86,34 +85,113 @@ public class TrimABinarySearchTree {
         inputTree.right = new TreeNode(2);
         TreeNode outputTree = new TreeNode(1);
         outputTree.right = new TreeNode(2);
-        return new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Leet Code Example 1 - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
+    }
+
+    /**
+     * This example has 0 as left of root and it needs to be replaced by the following largest
+     * node at it's right subtree, which is 1.
+     * */
+    private static void testLessThanExample(TrimABinarySearchTreeSolution solution)
+    {
+        int L = 1, R = 3;
+        TreeNode inputTree = new TreeNode(2);
+        inputTree.left = new TreeNode(0);
+        inputTree.left.right = new TreeNode(1);
+        inputTree.right = new TreeNode(3);
+        TreeNode outputTree = new TreeNode(2);
+        outputTree.left = new TreeNode(1);
+        outputTree.right = new TreeNode(3);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Test Less Than Example - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
+    }
+
+    private static void testGreaterThanExample(TrimABinarySearchTreeSolution solution)
+    {
+        int L = 1, R = 2;
+        TreeNode inputTree = new TreeNode(1);
+        inputTree.right = new TreeNode(2);
+        inputTree.right.right = new TreeNode(3);
+        TreeNode outputTree = new TreeNode(1);
+        outputTree.right = new TreeNode(2);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Test Greater Than Example - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
     }
 }
 
 class TrimABinarySearchTreeSolution {
+    /**
+     * Trims the BST for anything < L and > R
+     * */
     public TreeNode trimBST(TreeNode node, int L, int R)
     {
-        //base case of recursive statement
-        if(node == null) return null;
-        if(node.val < L || node.val > R) return null;
-        //less than
-        if(trimBST(node.left, L, R) == null) node.left = rightMostLeftTreeNode(node.left);
-        //greater than
-        if(trimBST(node.right, L, R) == null) node.right = leftMostRightTreeNode(node.right);
+        node = trimBSTLeft(node, L);
+        node = trimBSTRight(node, R);
         return node;
     }
 
-    private TreeNode leftMostRightTreeNode(TreeNode node)
+    /**
+     * BST search lowest to highest
+     * */
+    private TreeNode trimBSTLeft(TreeNode node, int L)
     {
-        //start of with a null related base statement
-        if(node.left == null) return node;
-        return leftMostRightTreeNode(node.left);
+        //base case of recursive statement
+        if(node == null) return null;
+        //recursive traversal if within conditions
+        if(node.val >= L)
+        {
+            if(node.left == null) return node;  //exit statement in case nothing left to check
+            //return trimBSTLeft(node.left, L);
+            node.left = trimBSTLeft(node.left, L);
+            return node;
+        }
+        /**
+         * Less than limit
+         * 1] update current node to next largest node on its right subtree
+         * 2] call recursive method from current node after update
+         */
+        node = getNextLargestTreeNode(node.right);
+        return trimBSTLeft(node, L);
     }
 
-    private TreeNode rightMostLeftTreeNode(TreeNode node)
+    /**
+     * BST search from highest to lowest
+     * */
+    private TreeNode trimBSTRight(TreeNode node, int R)
+    {
+        //base case of recursive statement
+        if(node == null) return null;
+        if(node.val <= R)
+        {
+            if(node.right == null) return node;
+            node.right = trimBSTRight(node.right, R);
+            //return trimBSTRight(node.right, R);
+            return node;
+        }
+        //node = getPreviousLargestTreeNode(node.left);
+        return getPreviousLargestTreeNode(node.left);
+    }
+
+    private TreeNode getNextLargestTreeNode(TreeNode node)
+    {
+        //base statement
+        if(node == null) return null;
+        if(node.left == null) return node;
+        return getNextLargestTreeNode(node.left);
+    }
+
+    private TreeNode getPreviousLargestTreeNode(TreeNode node)
     {
         //start of with a null related base statement
+        if(node == null) return null;
         if(node.right == null) return node;
-        return rightMostLeftTreeNode(node.right);
+        return getPreviousLargestTreeNode(node.right);
     }
 }
