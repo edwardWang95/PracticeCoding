@@ -63,9 +63,10 @@ public class TrimABinarySearchTree {
         /*
         testLessThanExample(solution);
         testGreaterThanExample(solution);
-        leetCodeExample1(solution);
         */
+        leetCodeExample1(solution);
         leetCodeExample2(solution);
+        leetCodeExample3(solution);
     }
 
     //Create test tree nodes to confirm isCorrect functionality of TrimABinarySearchTreeTest
@@ -144,6 +145,20 @@ public class TrimABinarySearchTree {
                 (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
                         "Correct" : "Incorrect"));
     }
+
+    private static void leetCodeExample3(TrimABinarySearchTreeSolution solution)
+    {
+        int L = 1, R = 1;
+        TreeNode inputTree = new TreeNode(3);
+        inputTree.left = new TreeNode(2);
+        inputTree.left.left = new TreeNode(1);
+        inputTree.right = new TreeNode(4);
+        TreeNode outputTree = new TreeNode(1);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Leet Code Example 3 - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
+    }
 }
 
 class TrimABinarySearchTreeSolution {
@@ -195,23 +210,25 @@ class TrimABinarySearchTreeSolution {
             //return trimBSTRight(node.right, R);
             return node;
         }
-        //node = getPreviousLargestTreeNode(node.left);
-        return getPreviousLargestTreeNode(node.left);
+        node = getPreviousLargestTreeNode(node.left);
+        return trimBSTRight(node, R);
     }
 
     private TreeNode getNextLargestTreeNode(TreeNode node)
     {
         //base statement
         if(node == null) return null;
-        if(node.left == null) return node;
-        return getNextLargestTreeNode(node.left);
+        return node;
+        //if(node.left == null) return node;
+        //return getNextLargestTreeNode(node.left);
     }
 
     private TreeNode getPreviousLargestTreeNode(TreeNode node)
     {
         //start of with a null related base statement
         if(node == null) return null;
-        if(node.right == null) return node;
-        return getPreviousLargestTreeNode(node.right);
+        return node;
+        //if(node.right == null) return node;
+        //return getPreviousLargestTreeNode(node.right);
     }
 }
