@@ -60,9 +60,12 @@ public class TrimABinarySearchTree {
     {
         TrimABinarySearchTreeSolution solution = new TrimABinarySearchTreeSolution();
         //Tests
+        /*
         testLessThanExample(solution);
         testGreaterThanExample(solution);
         leetCodeExample1(solution);
+        */
+        leetCodeExample2(solution);
     }
 
     //Create test tree nodes to confirm isCorrect functionality of TrimABinarySearchTreeTest
@@ -75,20 +78,6 @@ public class TrimABinarySearchTree {
         TrimABinarySearchTreeTest test =
                 new TrimABinarySearchTreeTest(inputTree, outputTree, 1, 1);
         System.out.println("Testing test isCorrect Method output: " + test.isCorrect(inputTree));
-    }
-
-    private static void leetCodeExample1(TrimABinarySearchTreeSolution solution)
-    {
-        int L = 1, R = 2;
-        TreeNode inputTree = new TreeNode(1);
-        inputTree.left = new TreeNode(0);
-        inputTree.right = new TreeNode(2);
-        TreeNode outputTree = new TreeNode(1);
-        outputTree.right = new TreeNode(2);
-        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
-        System.out.println("Leet Code Example 1 - " +
-                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
-                        "Correct" : "Incorrect"));
     }
 
     /**
@@ -121,6 +110,37 @@ public class TrimABinarySearchTree {
         outputTree.right = new TreeNode(2);
         TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
         System.out.println("Test Greater Than Example - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
+    }
+
+    private static void leetCodeExample1(TrimABinarySearchTreeSolution solution)
+    {
+        int L = 1, R = 2;
+        TreeNode inputTree = new TreeNode(1);
+        inputTree.left = new TreeNode(0);
+        inputTree.right = new TreeNode(2);
+        TreeNode outputTree = new TreeNode(1);
+        outputTree.right = new TreeNode(2);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Leet Code Example 1 - " +
+                (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
+                        "Correct" : "Incorrect"));
+    }
+
+    private static void leetCodeExample2(TrimABinarySearchTreeSolution solution)
+    {
+        int L = 1, R = 3;
+        TreeNode inputTree = new TreeNode(3);
+        inputTree.left = new TreeNode(0);
+        inputTree.left.right = new TreeNode(2);
+        inputTree.left.right.left = new TreeNode(1);
+        inputTree.right = new TreeNode(4);
+        TreeNode outputTree = new TreeNode(3);
+        outputTree.left = new TreeNode(2);
+        outputTree.left.left = new TreeNode(1);
+        TrimABinarySearchTreeTest test = new TrimABinarySearchTreeTest(inputTree, outputTree, L, R);
+        System.out.println("Leet Code Example 2 - " +
                 (test.isCorrect(solution.trimBST(test.input, test.L, test.R)) ?
                         "Correct" : "Incorrect"));
     }
