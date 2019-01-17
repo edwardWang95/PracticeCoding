@@ -113,26 +113,26 @@ class StockSpanner
         }else
         {
             //return binaryInsertionSort(val, prices.size()/2, -prices.size());
-            return binaryInsertionSort(val, 0, prices.size()-1);
+            return binaryInsertionSort(val, 0, prices.size());
         }
         return 1;
     }
 
     private int binaryInsertionSort(int val, int left, int right)
     {
-        //base case
-        if(right >= 1)
+        int middle = (right - left)/2;
+        //base case for end of the binary insertion sort
+        if(left == middle)
         {
-            int middle = 1 + (right - left)/2;
-            //recursive calls
-            if (prices.get(middle) > val) return binaryInsertionSort(val, left,middle-1);
+            //add in value and return that plus 1 for the value itself
+            prices.add(middle, val);
+            return middle+1;
+        }else {
+            //O(log(n)) shifting to closest insertion location
+            if (prices.get(middle) > val) return binaryInsertionSort(val, left, middle);
             else if (prices.get(middle) < val) return binaryInsertionSort(val, middle, right);
         }
-
-
-        //add in value and return that plus 1 for the value itself
-        prices.add(left, val);
-        return left+1;
+        return 1;
     }
 
     //O(log(n)) search for location to insert
