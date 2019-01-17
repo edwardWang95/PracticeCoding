@@ -112,14 +112,33 @@ class StockSpanner
             prices.add(val);
         }else
         {
-            return binaryInsertionSort(val, prices.size()/2, -prices.size());
+            //return binaryInsertionSort(val, prices.size()/2, -prices.size());
+            return binaryInsertionSort(val, 0, prices.size()-1);
         }
         return 1;
     }
 
-    //O(log(n)) search for location to insert
-    private int binaryInsertionSort(int val, int middle, int previousMiddle)
+    private int binaryInsertionSort(int val, int left, int right)
     {
+        //base case
+        if(right >= 1)
+        {
+            int middle = 1 + (right - left)/2;
+            //recursive calls
+            if (prices.get(middle) > val) return binaryInsertionSort(val, left,middle-1);
+            else if (prices.get(middle) < val) return binaryInsertionSort(val, middle, right);
+        }
+
+
+        //add in value and return that plus 1 for the value itself
+        prices.add(left, val);
+        return left+1;
+    }
+
+    //O(log(n)) search for location to insert
+    private int binaryInsertionSort2(int val, int middle, int previousMiddle)
+    {
+        //base case for end of the binary insertion sort
         if(middle == previousMiddle)
         {
             //minute shifts after getting closest to middle value
@@ -134,7 +153,7 @@ class StockSpanner
         }else {
             //O(log(n)) shifting to closest insertion location
             if(previousMiddle == -prices.size()) previousMiddle = prices.size();
-            if (prices.get(middle) > val) return binaryInsertionSort(val, middle - (previousMiddle - middle)/2, middle);
+            if (prices.get(middle) > val) return binaryInsertionSort(val, middle/2 /*- (previousMiddle - middle)/2*/, middle);
             else if (prices.get(middle) < val) return binaryInsertionSort(val, middle + middle/2, middle);
         }
         //add in value and return that plus 1 for the value itself
