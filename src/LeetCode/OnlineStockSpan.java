@@ -19,6 +19,7 @@ public class OnlineStockSpan {
     {
         System.out.println("Online Stock Span");
         test1();
+        test2();
     }
     /**
      * Your StockSpanner object will be instantiated and called as such:
@@ -47,7 +48,22 @@ public class OnlineStockSpan {
                 //System.out.println();
             }
         }
-        System.out.println(output.size() != input.length ? "Incorrect" : "Correct");
+        System.out.println(output.size() != input.length ? "Incorrect\n" : "Correct\n");
+    }
+
+    private static void test2()
+    {
+        System.out.println("Online Stock Spanner Test 2:\t");
+        StockSpanner obj = new StockSpanner();
+        Integer[] input = {73, 99, 41, 68, 32, 22, 72, 1, 83, 53};
+        ArrayList<Integer> output = new ArrayList<>();
+        for(int i=0;i<input.length;i++)
+        {
+            //System.out.print("Price: "+ input[i]);
+            output.add(obj.next(input[i]));
+            //System.out.print("\tOutput: "+output.get(i)+"\n");
+            //System.out.println();
+        }
     }
 }
 
@@ -74,11 +90,11 @@ class StockSpanner
     public int next(int price)
     {
         if(price < 0 || price > 100000) return 0;
-        return getSortedIndex(price);
-        /*int temp = getSortedIndex(price);
+        //return getSortedIndex(price);
+        int temp = getSortedIndex(price);
         printArrayList();
         return temp;
-        */
+
     }
 
     private void printArrayList()
@@ -96,7 +112,7 @@ class StockSpanner
             prices.add(val);
         }else
         {
-            return binaryInsertionSort(val, prices.size()/2, -1);
+            return binaryInsertionSort(val, prices.size()/2, -prices.size());
         }
         return 1;
     }
@@ -107,13 +123,18 @@ class StockSpanner
         if(middle == previousMiddle)
         {
             //minute shifts after getting closest to middle value
-            if(prices.get(previousMiddle) < val) middle++;
-            else if(prices.get(previousMiddle) > val && middle != 0 && prices.size()%2==0)middle--;    //if odd amount of values then decrement
+            if(prices.get(middle) < val)
+            {
+                //if(middle+1 < prices.size())middle++;
+                middle++;
+            }
+            else if(prices.get(middle) > val && middle != 0 && prices.size()%2==0)middle--;    //if even amount of values then decrement
         }else if(middle == prices.size()){
             middle = prices.size()-1;
         }else {
             //O(log(n)) shifting to closest insertion location
-            if (prices.get(middle) > val) return binaryInsertionSort(val, middle - (middle - previousMiddle)/2, middle);
+            if(previousMiddle == -prices.size()) previousMiddle = prices.size();
+            if (prices.get(middle) > val) return binaryInsertionSort(val, middle - (previousMiddle - middle)/2, middle);
             else if (prices.get(middle) < val) return binaryInsertionSort(val, middle + middle/2, middle);
         }
         //add in value and return that plus 1 for the value itself
