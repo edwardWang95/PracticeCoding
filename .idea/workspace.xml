@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,24 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="212" column="53" lean-forward="true" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
-              <folding>
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="570">
+              <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+              <folding>
+                <element signature="e#2085#2094#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,15 +63,18 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="910" />
     <option name="y" value="23" />
-    <option name="width" value="1301" />
-    <option name="height" value="877" />
+    <option name="width" value="1650" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,13 +97,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/edwardwang/Documents/Projects/Personal/PracticeCoding/src/LeetCode/LeetCode.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546916183213" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547956579174" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -126,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TrimABinarySearchTree">
+  <component name="RunManager" selected="Application.OnlineStockSpan">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -210,8 +200,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.LeetCode" />
+    <configuration name="OnlineStockSpan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.OnlineStockSpan" />
       <module name="PracticeCoding" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -245,7 +235,6 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -303,19 +292,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode" />
       <item itemvalue="Application.Braille" />
       <item itemvalue="Application.BrailleTest" />
       <item itemvalue="Application.IslandPerimeter" />
       <item itemvalue="Application.TrimABinarySearchTree" />
+      <item itemvalue="Application.OnlineStockSpan" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OnlineStockSpan" />
         <item itemvalue="Application.TrimABinarySearchTree" />
         <item itemvalue="Application.IslandPerimeter" />
         <item itemvalue="Application.BrailleTest" />
         <item itemvalue="Application.Braille" />
-        <item itemvalue="Application.LeetCode" />
       </list>
     </recent_temporary>
   </component>
@@ -342,10 +331,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1301" height="877" extended-state="0" />
+    <frame x="910" y="23" width="1650" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16171876" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16203336" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Nl-Palette" order="3" />
@@ -355,15 +344,16 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28535032" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28280255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22415094" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34037736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.329602" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32738853" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32830188" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -373,7 +363,6 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Properties" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -398,10 +387,10 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java</url>
-          <line>157</line>
+          <url>file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java</url>
+          <line>144</line>
           <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -545,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/IslandPerimeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="528">
           <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
             <element signature="e#2135#2136#0" expanded="true" />
@@ -558,19 +547,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="212" column="53" lean-forward="true" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
+        <state relative-caret-position="601">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
           <folding>
             <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="570">
+          <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+          <folding>
+            <element signature="e#2085#2094#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
