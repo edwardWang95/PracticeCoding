@@ -1,6 +1,7 @@
 package LeetCode;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 /**
  * 901. Online Stock Span
@@ -44,9 +45,9 @@ public class OnlineStockSpan {
             else
             {
                 output.add(obj.next(input[i]));
-                //System.out.println("Price: "+ input[i]+"\tOutput: "+output.get(i) + "\tExpected: "+expectedOutput[i]);
+                System.out.println("Price: "+ input[i]+"\tOutput: "+output.get(i) + "\tExpected: "+expectedOutput[i]);
                 if(!output.get(i).equals(expectedOutput[i])) break;
-                //System.out.println();
+                System.out.println();
             }
         }
         System.out.println(output.size() != input.length ? "Incorrect\n" : "Correct\n");
@@ -102,7 +103,7 @@ class StockSpanner
 
     }
 
-    public int next(int price)
+    public int next2(int price)
     {
         prices.add(price);
         int counter = 0, i = prices.size() - 1;
@@ -114,6 +115,16 @@ class StockSpanner
         return counter;
     }
 
+    //Faster method using Stacks
+    Stack<int[]> stack = new Stack<>();
+    public int next(int price)
+    {
+        int count = 1;
+        while(!stack.isEmpty() && stack.peek()[0] <= price) count += stack.pop()[1];
+        stack.push(new int[]{price, count});
+        return count;
+    }
+
     /**
      * Every price starts with a value of 1.
      * Search all previous stock values to and increment the count if they are less than current price.
@@ -122,7 +133,7 @@ class StockSpanner
      * counter based on it's location.
      * bucket sort based on tens values into insertion sort
      * */
-    public int next2(int price)
+    public int nextBinaryInsertNotConsecutiveCount(int price)
     {
         if(price < 0 || price > 100000) return 0;
         //return getSortedIndex(price);
