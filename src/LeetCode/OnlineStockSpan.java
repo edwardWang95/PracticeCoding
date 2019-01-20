@@ -19,7 +19,8 @@ public class OnlineStockSpan {
     {
         System.out.println("Online Stock Span");
         test1();
-        test2();
+        //test2();
+        test3();
     }
     /**
      * Your StockSpanner object will be instantiated and called as such:
@@ -40,7 +41,7 @@ public class OnlineStockSpan {
         for(int i=0;i<inputString.length;i++)
         {
             if(inputString[i].equals("StockSpanner"))output.add(null);
-            else if (inputString[i].equals("next"))
+            else
             {
                 output.add(obj.next(input[i]));
                 //System.out.println("Price: "+ input[i]+"\tOutput: "+output.get(i) + "\tExpected: "+expectedOutput[i]);
@@ -65,6 +66,28 @@ public class OnlineStockSpan {
             //System.out.println();
         }
     }
+
+    private static void test3()
+    {
+        System.out.println("Online Stock Spanner Test 3:\t");
+        StockSpanner obj = new StockSpanner();
+        String[] inputString = {"StockSpanner","next","next","next","next","next"};
+        Integer[] input = {29, 91, 62, 76, 51};
+        Integer[] expectedOutput = {null, 1, 2, 1, 2, 1};
+        ArrayList<Integer> output = new ArrayList<>();
+        for(int i=0;i<inputString.length - 1;i++)
+        {
+            if(inputString[i].equals("StockSpanner"))output.add(null);
+            else
+            {
+                output.add(obj.next(input[i-1]));
+                System.out.println("Price: "+ input[i]+"\tOutput: "+output.get(i) + "\tExpected: "+expectedOutput[i]);
+                if(!output.get(i).equals(expectedOutput[i])) break;
+                System.out.println();
+            }
+        }
+        System.out.println(output.size() != input.length ? "Incorrect\n" : "Correct\n");
+    }
 }
 
 /**
@@ -79,6 +102,18 @@ class StockSpanner
 
     }
 
+    public int next(int price)
+    {
+        prices.add(price);
+        int counter = 0, i = prices.size() - 1;
+        do{
+            counter++;
+            i--;
+        }
+        while(i >= 0 && price >= prices.get(i));
+        return counter;
+    }
+
     /**
      * Every price starts with a value of 1.
      * Search all previous stock values to and increment the count if they are less than current price.
@@ -87,14 +122,13 @@ class StockSpanner
      * counter based on it's location.
      * bucket sort based on tens values into insertion sort
      * */
-    public int next(int price)
+    public int next2(int price)
     {
         if(price < 0 || price > 100000) return 0;
         //return getSortedIndex(price);
         int temp = getSortedIndex(price);
         printArrayList();
         return temp;
-
     }
 
     private void printArrayList()
@@ -107,13 +141,8 @@ class StockSpanner
     private int getSortedIndex(int val)
     {
         //base case if empty
-        if(prices.size() == 0)
-        {
-            prices.add(val);
-        }else
-        {
-            return binaryInsertionSort(val, 0, prices.size()-1);
-        }
+        if(prices.size() == 0) prices.add(val);
+        else return binaryInsertionSort(val, 0, prices.size()-1);
         return 1;
     }
 
