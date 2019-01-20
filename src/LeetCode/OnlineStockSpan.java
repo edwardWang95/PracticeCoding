@@ -116,6 +116,10 @@ class StockSpanner
     }
 
     //Faster method using Stacks
+    //instead of int[] could have object that holds price and count value.
+    //need count bc as we pop we lose history and need to keep track of amount of consecutive values previously that we popped
+    //try test1 as example and we see first 60 disappears and for 75 to have 4 as output we need history. If not
+    //we get 3 because we don't see the first 60 anymore.
     Stack<int[]> stack = new Stack<>();
     public int next(int price)
     {
