@@ -112,27 +112,32 @@ class StockSpanner
             prices.add(val);
         }else
         {
-            //return binaryInsertionSort(val, prices.size()/2, -prices.size());
-            return binaryInsertionSort(val, 0, prices.size());
+            return binaryInsertionSort(val, 0, prices.size()-1);
         }
         return 1;
     }
 
     private int binaryInsertionSort(int val, int left, int right)
     {
-        int middle = (right - left)/2;
+        //handle odd and even amount of numbers
+        int middle = (right - left)/2 + left;
         //base case for end of the binary insertion sort
-        if(left == middle)
+        if(left >= right)
         {
-            //add in value and return that plus 1 for the value itself
-            prices.add(middle, val);
-            return middle+1;
+            //insert at index shifts both current value and everything up
+            //handle case if index is less than or greater than val being inserted
+            if (prices.get(left) >= val) {
+                prices.add(left, val);
+                return left + 1;
+            } else {
+                prices.add(left + 1, val);
+                return left + 2;
+            }
         }else {
             //O(log(n)) shifting to closest insertion location
-            if (prices.get(middle) > val) return binaryInsertionSort(val, left, middle);
-            else if (prices.get(middle) < val) return binaryInsertionSort(val, middle, right);
+            if (prices.get(middle) >= val)return binaryInsertionSort(val, left, (middle - 1 < 0) ? 0 : middle-1);
+            else return binaryInsertionSort(val, (middle + 1 == prices.size()) ? prices.size() - 1 : middle+1, right);
         }
-        return 1;
     }
 
     //O(log(n)) search for location to insert
