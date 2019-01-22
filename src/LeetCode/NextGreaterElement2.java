@@ -23,11 +23,12 @@ public class NextGreaterElement2 {
 
     private static void test1(NextGreaterElement2Solution solution)
     {
+        System.out.println("Test 1");
         int[] input = {1, 2, 1};
         int[] expectedOutput = {2, -1, 2};
         int[] output = solution.nextGreaterElements(input);
         boolean isCorrect = true;
-        for(int i: expectedOutput)
+        for(int i=0;i<expectedOutput.length;i++)
         {
             if(output[i] != expectedOutput[i])
             {
@@ -48,6 +49,22 @@ class NextGreaterElement2Solution
 
     public int[] nextGreaterElements(int[] nums)
     {
-        return null;
+        for(int i=0;i<nums.length;i++)
+        {
+            nums[i] = getNextGreaterElement(i, nums);
+        }
+        return nums;
+    }
+
+    private int getNextGreaterElement(int index, int[] array)
+    {
+        int j=index+1;
+        do {
+            if(j == array.length) j=0;  //keep j in circular loop
+            if(array[j] > array[index]) return array[j];
+            j++;
+        }
+        while(j != index);
+        return -1;
     }
 }
