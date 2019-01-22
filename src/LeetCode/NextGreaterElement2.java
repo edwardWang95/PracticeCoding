@@ -38,6 +38,29 @@ public class NextGreaterElement2 {
         }
         System.out.println(isCorrect ? "Correct" : "Incorrect");
     }
+
+    /**
+     * Error: Time Limit Exceeded
+     * */
+    private static void test2(NextGreaterElement2Solution solution)
+    {
+        System.out.println("Test 2");
+        int[] input = {5, 4, 3, 2, 1};
+        int[] expectedOutput = {2, -1, 2};
+        int[] output = solution.nextGreaterElements(input);
+        /*
+        boolean isCorrect = true;
+        for(int i=0;i<expectedOutput.length;i++)
+        {
+            if(output[i] != expectedOutput[i])
+            {
+                isCorrect = false;
+                break;
+            }
+        }
+        System.out.println(isCorrect ? "Correct" : "Incorrect");
+        */
+    }
 }
 
 class NextGreaterElement2Solution
