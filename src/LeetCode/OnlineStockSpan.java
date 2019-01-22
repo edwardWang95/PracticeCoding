@@ -34,7 +34,7 @@ public class OnlineStockSpan {
     private static void test1()
     {
         System.out.println("Online Stock Spanner Test 1:\t");
-        StockSpanner obj = new StockSpanner();
+        OnlineStockSpanSolution obj = new OnlineStockSpanSolution();
         String[] inputString = {"StockSpanner","next","next","next","next","next","next","next"};
         Integer[] input = {null, 100, 80, 60, 70, 60, 75, 85};
         Integer[] expectedOutput = {null, 1, 1, 1, 2, 1, 4, 6};
@@ -56,7 +56,7 @@ public class OnlineStockSpan {
     private static void test2()
     {
         System.out.println("Online Stock Spanner Test 2:\t");
-        StockSpanner obj = new StockSpanner();
+        OnlineStockSpanSolution obj = new OnlineStockSpanSolution();
         Integer[] input = {73, 99, 41, 68, 32, 22, 72, 1, 83, 53};
         ArrayList<Integer> output = new ArrayList<>();
         for(int i=0;i<input.length;i++)
@@ -71,7 +71,7 @@ public class OnlineStockSpan {
     private static void test3()
     {
         System.out.println("Online Stock Spanner Test 3:\t");
-        StockSpanner obj = new StockSpanner();
+        OnlineStockSpanSolution obj = new OnlineStockSpanSolution();
         String[] inputString = {"StockSpanner","next","next","next","next","next"};
         Integer[] input = {29, 91, 62, 76, 51};
         Integer[] expectedOutput = {null, 1, 2, 1, 2, 1};
@@ -94,11 +94,11 @@ public class OnlineStockSpan {
 /**
  * This challenge has a time limit, so it's focus will be on speed.
  * */
-class StockSpanner
+class OnlineStockSpanSolution
 {
     ArrayList<Integer> prices = new ArrayList<Integer>();
 
-    public StockSpanner()
+    public OnlineStockSpanSolution()
     {
 
     }

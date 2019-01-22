@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,15 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+            <state relative-caret-position="521">
+              <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2085#2094#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="73" column="70" lean-forward="true" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -60,6 +69,7 @@
         <option value="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java" />
       </list>
     </option>
   </component>
@@ -102,7 +112,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/edwardwang/Documents/Projects/Personal/PracticeCoding/src/LeetCode/LeetCode.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547958077077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548120634162" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -117,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OnlineStockSpan">
+  <component name="RunManager" selected="Application.NextGreaterElement2">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -171,14 +181,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Braille" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Braille" />
-      <module name="PracticeCoding" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BrailleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BrailleTest" />
       <module name="PracticeCoding" />
@@ -189,6 +191,20 @@
     </configuration>
     <configuration name="IslandPerimeter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.IslandPerimeter" />
+      <module name="PracticeCoding" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NextGreaterElement2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.NextGreaterElement2" />
       <module name="PracticeCoding" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -293,19 +309,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Braille" />
       <item itemvalue="Application.BrailleTest" />
       <item itemvalue="Application.IslandPerimeter" />
       <item itemvalue="Application.TrimABinarySearchTree" />
       <item itemvalue="Application.OnlineStockSpan" />
+      <item itemvalue="Application.NextGreaterElement2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NextGreaterElement2" />
         <item itemvalue="Application.OnlineStockSpan" />
         <item itemvalue="Application.TrimABinarySearchTree" />
         <item itemvalue="Application.IslandPerimeter" />
         <item itemvalue="Application.BrailleTest" />
-        <item itemvalue="Application.Braille" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +351,7 @@
     <frame x="910" y="23" width="1650" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16203336" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16169155" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Nl-Palette" order="3" />
@@ -388,16 +404,16 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java</url>
-          <line>159</line>
+          <url>file://$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java</url>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java</url>
-          <line>125</line>
+          <url>file://$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java</url>
+          <line>82</line>
           <properties />
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -565,12 +581,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/OnlineStockSpan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="121" column="57" lean-forward="true" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+        <state relative-caret-position="521">
+          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2085#2094#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/NextGreaterElement2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="73" column="70" lean-forward="true" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
         </state>
       </provider>
     </entry>
