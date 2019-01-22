@@ -18,7 +18,8 @@ public class NextGreaterElement2 {
     public static void main(String[] args)
     {
         NextGreaterElement2Solution solution = new NextGreaterElement2Solution();
-        test1(solution);
+        //test1(solution);
+        test2(solution);
     }
 
     private static void test1(NextGreaterElement2Solution solution)
@@ -46,12 +47,12 @@ public class NextGreaterElement2 {
     {
         System.out.println("Test 2");
         int[] input = {5, 4, 3, 2, 1};
-        int[] expectedOutput = {2, -1, 2};
+        int[] expectedOutput = {-1, 5, 5, 5, 5};
         int[] output = solution.nextGreaterElements(input);
-        /*
         boolean isCorrect = true;
         for(int i=0;i<expectedOutput.length;i++)
         {
+            System.out.println("Expected: "+ expectedOutput[i]+"\t\tOutput: "+output[i]);
             if(output[i] != expectedOutput[i])
             {
                 isCorrect = false;
@@ -59,7 +60,6 @@ public class NextGreaterElement2 {
             }
         }
         System.out.println(isCorrect ? "Correct" : "Incorrect");
-        */
     }
 }
 
@@ -70,19 +70,24 @@ class NextGreaterElement2Solution
 
     }
 
+    /**
+     * Current solution runs 45.08% faster than all other submissions.
+     * */
     public int[] nextGreaterElements(int[] nums)
     {
+        int newArray[] = new int[nums.length];
         for(int i=0;i<nums.length;i++)
         {
-            nums[i] = getNextGreaterElement(i, nums);
+            newArray[i] = getNextGreaterElement(i, nums);
         }
-        return nums;
+        return newArray;
     }
 
     private int getNextGreaterElement(int index, int[] array)
     {
         int j=index+1;
         do {
+            if(index == 0 && j==array.length) break;    //handle case if index is at 0 and don't want looping
             if(j == array.length) j=0;  //keep j in circular loop
             if(array[j] > array[index]) return array[j];
             j++;
