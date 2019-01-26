@@ -108,11 +108,14 @@ class FourSumSolution
      * Top to bottom is regular recursions
      * */
     public List<List<Integer>> fourSum(int[] nums, int target) {
+        /*
         constructCandidates(nums);
         for(FourSumCandidate candidate: candidates)
         {
             backtrack(candidate, nums, target);
         }
+        */
+        backtrack(new FourSumCandidate(), nums, target);
         return solution;
     }
 
@@ -170,6 +173,13 @@ class FourSumSolution
     private List<Integer> pruneCandidates(FourSumCandidate currSolution, int[] nums, int target)
     {
         List<Integer> candidates = new ArrayList<>();
+        if(currSolution.getSize() == 0)
+        {
+            for(int i=0;i<nums.length - 3;i++)
+            {
+                candidates.add(nums[i]);
+            }
+        }
         for(int i=currSolution.startingIndex;i<nums.length;i++)
         {
             //if already at 3 items, don't add items that don't match target
