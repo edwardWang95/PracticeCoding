@@ -88,7 +88,14 @@ class FourSumCandidate
     //after confirming solution, sort before it is added into solutions list
     public void sort()
     {
+        System.out.println(toString());
+    }
 
+    @Override
+    public String toString() {
+        String output = "";
+        for(int i=0;i<4;i++) output += " " + list.get(i);
+        return output;
     }
 }
 
@@ -102,12 +109,15 @@ class FourSumSolution
      * */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         constructCandidates(nums);
-        backtrack(new FourSumCandidate(), nums, target);
+        for(FourSumCandidate candidate: candidates)
+        {
+            backtrack(candidate, nums, target);
+        }
         return solution;
     }
 
     /**
-     * Create a list of values that can fit within bounds
+     * Create a list of values that can create a 4 sized list to increase speed.
      * */
     private void constructCandidates(int[] nums)
     {
@@ -143,6 +153,7 @@ class FourSumSolution
                 //add newCandidate value to current solution
                 currSolution.addValue(newCandidates.get(0));
                 //backtrack
+                backtrack(currSolution, nums, target);
                 //remove value
                 currSolution.removeValue();
                 newCandidates.remove(0);
@@ -159,7 +170,14 @@ class FourSumSolution
     private List<Integer> pruneCandidates(FourSumCandidate currSolution, int[] nums, int target)
     {
         List<Integer> candidates = new ArrayList<>();
-
+        for(int i=currSolution.startingIndex;i<nums.length;i++)
+        {
+            //if already at 3 items, don't add items that don't match target
+            if(currSolution.getSize() == 3)
+            {
+                if(currSolution.total + nums[i] == target) candidates.add(nums[i]);
+            }else candidates.add(nums[i]);
+        }
         return candidates;
     }
 }
