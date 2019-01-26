@@ -60,7 +60,13 @@ public class FourSum {
 class FourSumCandidate
 {
     List<Integer> list = new ArrayList<>();
-    int total;
+    int total, startingIndex;   //startingIndex used for pruning - where to look for next values to add from int array
+    public FourSumCandidate(){}
+    public FourSumCandidate(int startingIndex, int value)
+    {
+        this.startingIndex = startingIndex;
+        list.add(value);
+    }
     public void addValue(int num)
     {
         list.add(num);
@@ -70,6 +76,19 @@ class FourSumCandidate
     {
         total -= list.get(list.size()-1);
         list.remove(list.size()-1);
+    }
+    public int getSize()
+    {
+        return list.size();
+    }
+    public boolean isSolution(int target)
+    {
+        return list.size() == 4 && total == target;
+    }
+    //after confirming solution, sort before it is added into solutions list
+    public void sort()
+    {
+
     }
 }
 
@@ -82,61 +101,64 @@ class FourSumSolution
      * Top to bottom is regular recursions
      * */
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        constructCandidates(nums, target);
-        backtrack(new ArrayList<>(), target);
+        constructCandidates(nums);
+        backtrack(new FourSumCandidate(), nums, target);
         return solution;
     }
 
     /**
      * Create a list of values that can fit within bounds
      * */
-    private void constructCandidates(int[] nums, int target)
+    private void constructCandidates(int[] nums)
     {
         for(int i=0;i<nums.length - 3;i++)
         {
-            FourSumCandidate candidate = new FourSumCandidate();
-            candidate.addValue(nums[i]);
+            FourSumCandidate candidate = new FourSumCandidate(i, nums[i]);
             candidates.add(candidate);
         }
     }
 
-    private void backtrack(List<FourSumCandidate> newSolution, int target)
+    /**
+     * Check if current candidate is a solution. Add to list of solutions if it is.
+     *
+     * Prune candidates for more possible values to add on to create solutions.
+     *
+     * @param currSolution pruned integers that are possible solutions to current list
+     * @param target target value for solution
+     * */
+    private void backtrack(FourSumCandidate currSolution, int nums[], int target)
     {
         //base case
-        /*
-        if(isSolution(newSolution, target))
+        if(currSolution.isSolution(target))
         {
-            solution.add(newSolution);
-        }else
-        {
-            //construct candidates based on current solutions
-            List<List<Integer>> newCandidates = pruneCandidate();
+            //have it sorted to match expected output
+            currSolution.sort();
+            solution.add(currSolution.list);
         }
-        */
+        else
+        {
+            List<Integer> newCandidates = pruneCandidates(currSolution, nums, target);
+            while(!(newCandidates.size() ==0))
+            {
+                //add newCandidate value to current solution
+                currSolution.addValue(newCandidates.get(0));
+                //backtrack
+                //remove value
+                currSolution.removeValue();
+                newCandidates.remove(0);
+            }
+            //if current size is 4 and not a solution, return
+            //construct candidates based on current solutions
+        }
     }
 
     /**
-     * If the solution adds up to target and is of size 0, add it to solution list
+     * Returns list of possible values that can be candidates to current solution.
+     * Don't return anything if the size is already 4.
      * */
-    private boolean isSolution(List<Integer> newSolution, int target)
+    private List<Integer> pruneCandidates(FourSumCandidate currSolution, int[] nums, int target)
     {
-        if(newSolution.size() != 4) return false;
-        int total = 0;
-        for(Integer i: newSolution)
-        {
-            total += i;
-        }
-        return total == target;
-    }
-
-    private void sortList()
-    {
-
-    }
-
-    private List<List<Integer>> pruneCandidate(int[] nums, List<Integer> currSolution)
-    {
-        List<List<Integer>> candidates = new ArrayList<>();
+        List<Integer> candidates = new ArrayList<>();
 
         return candidates;
     }
