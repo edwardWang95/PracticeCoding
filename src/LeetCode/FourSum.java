@@ -12,7 +12,7 @@ import java.util.List;
  *
  * Given array nums = [1, 0, -1, 0, -2, 2], and target = 0.
  *
- * A solution set is:
+ * A solutions set is:
  * [
  *   [-1,  0, 0, 1],
  *   [-2, -1, 1, 2],
@@ -55,138 +55,176 @@ public class FourSum {
 }
 
 /**
- * Keep track of candidate solution and it's total value to improve time.
+ * Keep track of candidate solutions and it's total value to improve time.
  * */
-class FourSumCandidate
+class FourSumList
 {
-    List<Integer> list = new ArrayList<>();
-    int total, startingIndex;   //startingIndex used for pruning - where to look for next values to add from int array
-    public FourSumCandidate(){}
-    public FourSumCandidate(int startingIndex, int value)
-    {
-        this.startingIndex = startingIndex;
-        list.add(value);
-    }
-    public void addValue(int num)
+    List<FourSumCandidate> list = new ArrayList<>();
+    int total;   //startingIndex used for pruning - where to look for next values to add from int array
+    public void addValue(FourSumCandidate num)
     {
         list.add(num);
-        total += num;
+        total += num.getVal();
     }
     public void removeValue()
     {
-        total -= list.get(list.size()-1);
+        total -= list.get(list.size()-1).getVal();
         list.remove(list.size()-1);
     }
     public int getSize()
     {
         return list.size();
     }
-    public boolean isSolution(int target)
+    //after confirming solutions, sort the list before it is added into solutions list
+    public List<FourSumCandidate> getList()
     {
-        return list.size() == 4 && total == target;
+        return list;
     }
-    //after confirming solution, sort before it is added into solutions list
-    public void sort()
+    public int getTotal()
     {
-        System.out.println(toString());
+        return total;
+    }
+    public List<Integer> getSortedList()
+    {
+        List<Integer> sortedList = new ArrayList<>();
+        for(FourSumCandidate candidate: list)sortedList.add(candidate.getVal());
+        quickSort(sortedList, 0, sortedList.size()-1);
+        printSortedList(sortedList);
+        return sortedList;
     }
 
-    @Override
-    public String toString() {
-        String output = "";
-        for(int i=0;i<4;i++) output += " " + list.get(i);
-        return output;
+    private void quickSort(List<Integer> sortedList, int low, int high)
+    {
+        if(low < high)
+        {
+            int partition = partition(sortedList, low, high);
+            quickSort(sortedList, low, partition - 1);
+            quickSort(sortedList, partition + 1, high);
+        }
+    }
+
+    private int partition(List<Integer> list, int low, int high)
+    {
+        int pivot = list.get(high);
+        int i = low - 1;
+        for(int j=low;j<high;j++)
+        {
+            if(list.get(j) <= pivot)
+            {
+                i++;
+                //swap positions of i and j
+                int temp = list.get(i);
+                list.set(i, list.get(j));
+                list.set(j, temp);
+            }
+        }
+        //swap last iterated element with pivot
+        int temp = list.get(i + 1);
+        list.set(i+1, list.get(high));
+        list.set(high, temp);
+        return i + 1;
+    }
+
+    /**
+     * Only prints out the resulting sorted List
+     * */
+    public void printSortedList(List<Integer> sortedList) {
+        for(int i=0;i<4;i++) System.out.print(sortedList.get(i) + " ");
+        System.out.println();
+    }
+}
+
+/**
+ * Need to keep track of value and index of where it was found in nums[]
+ * */
+class FourSumCandidate
+{
+    int val, index;
+    public FourSumCandidate(int val, int index)
+    {
+        this.val = val;
+        this.index = index;
+    }
+    public int getVal() {
+        return val;
+    }
+    public int getIndex() {
+        return index;
     }
 }
 
 class FourSumSolution
 {
-    private List<List<Integer>> solution= new ArrayList<>();
-    private List<FourSumCandidate> candidates= new ArrayList<>();
+    private List<List<Integer>> solutions = new ArrayList<>();
     /**
      * Dynamic programming - bottom to top: Backtracking - Memoization
      * Top to bottom is regular recursions
      * */
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        /*
-        constructCandidates(nums);
-        for(FourSumCandidate candidate: candidates)
-        {
-            backtrack(candidate, nums, target);
-        }
-        */
-        backtrack(new FourSumCandidate(), nums, target);
-        return solution;
+        backtrack(new FourSumList(), nums, target);
+        return solutions;
     }
 
     /**
-     * Create a list of values that can create a 4 sized list to increase speed.
-     * */
-    private void constructCandidates(int[] nums)
-    {
-        for(int i=0;i<nums.length - 3;i++)
-        {
-            FourSumCandidate candidate = new FourSumCandidate(i, nums[i]);
-            candidates.add(candidate);
-        }
-    }
-
-    /**
-     * Check if current candidate is a solution. Add to list of solutions if it is.
+     * Check if current candidate is a solutions. Add to list of solutions if it is.
      *
      * Prune candidates for more possible values to add on to create solutions.
      *
-     * @param currSolution pruned integers that are possible solutions to current list
-     * @param target target value for solution
+     * @param solution pruned integers that are possible solutions to current list
+     * @param target target value for solutions
      * */
-    private void backtrack(FourSumCandidate currSolution, int nums[], int target)
+    private void backtrack(FourSumList solution, int nums[], int target)
     {
         //base case
-        if(currSolution.isSolution(target))
-        {
-            //have it sorted to match expected output
-            currSolution.sort();
-            solution.add(currSolution.list);
-        }
+        if(isSolution(solution, target)) solutions.add(solution.getSortedList());
         else
         {
-            List<Integer> newCandidates = pruneCandidates(currSolution, nums, target);
+            List<FourSumCandidate> newCandidates = pruneCandidates(solution, nums, target);
             while(!(newCandidates.size() ==0))
             {
-                //add newCandidate value to current solution
-                currSolution.addValue(newCandidates.get(0));
+                //add newCandidate value to current solutions
+                solution.addValue(newCandidates.get(0));
                 //backtrack
-                backtrack(currSolution, nums, target);
+                backtrack(solution, nums, target);
                 //remove value
-                currSolution.removeValue();
+                solution.removeValue();
                 newCandidates.remove(0);
             }
-            //if current size is 4 and not a solution, return
+            //if current size is 4 and not a solutions, return
             //construct candidates based on current solutions
         }
     }
 
+    private boolean isSolution(FourSumList solution, int target)
+    {
+        return solution.getList().size() == 4 && solution.getTotal() == target;
+    }
+
     /**
-     * Returns list of possible values that can be candidates to current solution.
+     * Returns list of possible values that can be candidates to current solutions.
      * Don't return anything if the size is already 4.
      * */
-    private List<Integer> pruneCandidates(FourSumCandidate currSolution, int[] nums, int target)
+    private List<FourSumCandidate> pruneCandidates(FourSumList solution, int[] nums, int target)
     {
-        List<Integer> candidates = new ArrayList<>();
-        if(currSolution.getSize() == 0)
+        List<FourSumCandidate> candidates = new ArrayList<>();
+        if(solution.getSize() == 0) //starting point
         {
             for(int i=0;i<nums.length - 3;i++)
             {
-                candidates.add(nums[i]);
+                candidates.add(new FourSumCandidate(nums[i], i));
             }
-        }
-        for(int i=currSolution.startingIndex;i<nums.length;i++)
+
+        }else
         {
-            //if already at 3 items, don't add items that don't match target
-            if(currSolution.getSize() == 3)
+            //i = index of most recently added candidate
+            for(int i=solution.getList().get(solution.getSize() - 1).getIndex()+1; i<nums.length; i++)
             {
-                if(currSolution.total + nums[i] == target) candidates.add(nums[i]);
-            }else candidates.add(nums[i]);
+                //if already at 3 items, don't add items that don't match target
+                if(solution.getSize() == 3)
+                {
+                    if(solution.total + nums[i] == target) candidates.add(new FourSumCandidate(nums[i], i));
+                }else candidates.add(new FourSumCandidate(nums[i], i));
+            }
         }
         return candidates;
     }

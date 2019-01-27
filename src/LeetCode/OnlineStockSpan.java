@@ -133,9 +133,9 @@ class OnlineStockSpanSolution
      * Every price starts with a value of 1.
      * Search all previous stock values to and increment the count if they are less than current price.
      *
-     * Array list so I can dynamically increase the size, merge sort into the array and then update the
+     * Array list so I can dynamically increase the size, merge getList into the array and then update the
      * counter based on it's location.
-     * bucket sort based on tens values into insertion sort
+     * bucket getList based on tens values into insertion getList
      * */
     public int nextBinaryInsertNotConsecutiveCount(int price)
     {
@@ -165,7 +165,7 @@ class OnlineStockSpanSolution
     {
         //handle odd and even amount of numbers
         int middle = (right - left)/2 + left;
-        //base case for end of the binary insertion sort
+        //base case for end of the binary insertion getList
         if(left >= right)
         {
             //insert at index shifts both current value and everything up
@@ -187,7 +187,7 @@ class OnlineStockSpanSolution
     //O(log(n)) search for location to insert
     private int binaryInsertionSort2(int val, int middle, int previousMiddle)
     {
-        //base case for end of the binary insertion sort
+        //base case for end of the binary insertion getList
         if(middle == previousMiddle)
         {
             //minute shifts after getting closest to middle value
