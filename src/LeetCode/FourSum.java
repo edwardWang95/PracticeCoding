@@ -208,7 +208,7 @@ class FourSumSolution
 
     private boolean isRepeat(List<Integer> possSolution)
     {
-        for(List<Integer> currSolution: solutions) if(currSolution.equals(possSolution)) return true;
+        for(List<Integer> solution: solutions) if(solution.equals(possSolution)) return true;
         return false;
     }
 
@@ -234,7 +234,14 @@ class FourSumSolution
                 //if already at 3 items, don't add items that don't match target
                 if(solution.getSize() == 3)
                 {
-                    if(solution.total + nums[i] == target) candidates.add(new FourSumCandidate(nums[i], i));
+                    if(solution.total + nums[i] == target)
+                    {
+                        //don't add repeats
+                        FourSumList temp = new FourSumList();
+                        temp.getList().addAll(solution.getList());
+                        temp.getList().add(new FourSumCandidate(nums[i], i));
+                        if(!isRepeat(temp.getSortedList())) candidates.add(new FourSumCandidate(nums[i], i));
+                    }
                 }else candidates.add(new FourSumCandidate(nums[i], i));
             }
         }
