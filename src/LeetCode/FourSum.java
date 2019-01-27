@@ -56,6 +56,8 @@ public class FourSum {
 
 /**
  * Keep track of candidate solutions and it's total value to improve time.
+ *
+ * 6.38% faster than all other Java submissions.
  * */
 class FourSumList
 {
