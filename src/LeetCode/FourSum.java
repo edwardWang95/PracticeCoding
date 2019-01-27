@@ -176,7 +176,11 @@ class FourSumSolution
     private void backtrack(FourSumList solution, int nums[], int target)
     {
         //base case
-        if(isSolution(solution, target)) solutions.add(solution.getSortedList());
+        if(isSolution(solution, target))
+        {
+            List<Integer> possSolution = solution.getSortedList();
+            if(!isRepeat(possSolution)) solutions.add(possSolution);
+        }
         else
         {
             List<FourSumCandidate> newCandidates = pruneCandidates(solution, nums, target);
@@ -198,6 +202,12 @@ class FourSumSolution
     private boolean isSolution(FourSumList solution, int target)
     {
         return solution.getList().size() == 4 && solution.getTotal() == target;
+    }
+
+    private boolean isRepeat(List<Integer> possSolution)
+    {
+        for(List<Integer> currSolution: solutions) if(currSolution.equals(possSolution)) return true;
+        return false;
     }
 
     /**
