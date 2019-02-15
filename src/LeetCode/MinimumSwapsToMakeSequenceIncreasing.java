@@ -24,7 +24,10 @@ public class MinimumSwapsToMakeSequenceIncreasing
     public static void main(String[] args)
     {
         MinimumSwapsToMakeSequenceIncreasingSolution solution = new MinimumSwapsToMakeSequenceIncreasingSolution();
-        test1();
+        //test1(solution);
+        //test2(solution);
+        //test3(solution);
+        test4(solution);
     }
 
     private static void test1(MinimumSwapsToMakeSequenceIncreasingSolution solution)
@@ -34,14 +37,82 @@ public class MinimumSwapsToMakeSequenceIncreasing
         int B[] = {1, 2, 3, 7};
         int expectedOutput = 1;
         int output = solution.minSwap(A, B);
-        System.out.println(output == expectedOutput ? "Correct" : "Incorrect");
+        System.out.println(output == expectedOutput ? "Correct" : "Incorrect = " + output);
+    }
+
+    private static void test2(MinimumSwapsToMakeSequenceIncreasingSolution solution)
+    {
+        System.out.println("Test 2");
+        int A[] = {3,3,8,9,10};
+        int B[] = {1,7,4,6,8};
+        int expectedOutput = 1;
+        int output = solution.minSwap(A, B);
+        System.out.println(output == expectedOutput ? "Correct" : "Incorrect\tExpected: "+expectedOutput + "\t\tOutput: "+output);
+    }
+
+    private static void test3(MinimumSwapsToMakeSequenceIncreasingSolution solution)
+    {
+        System.out.println("Test 3");
+        int A[] = {0,3,4,9,10};
+        int B[] = {2,3,7,5,6};
+        int expectedOutput = 1;
+        int output = solution.minSwap(A, B);
+        System.out.println(output == expectedOutput ? "Correct" : "Incorrect\tExpected: "+expectedOutput + "\t\tOutput: "+output);
+    }
+
+    private static void test4(MinimumSwapsToMakeSequenceIncreasingSolution solution)
+    {
+        System.out.println("Test 4");
+        int A[] = {0,7,8,10,10,11,12,13,19,18};
+        int B[] = {4,4,5,7,11,14,15,16,17,20};
+        int expectedOutput = 4;
+        int output = solution.minSwap(A, B);
+        System.out.println(output == expectedOutput ? "Correct" : "Incorrect\tExpected: "+expectedOutput + "\t\tOutput: "+output);
     }
 }
 
 class MinimumSwapsToMakeSequenceIncreasingSolution
 {
     public int minSwap(int[] A, int[] B) {
+        return minSwap(A,B,0, 0);
+    }
 
-        return 0;
+    private int minSwap(int[] A, int[] B, int i, int minSwaps){
+        while(i < A.length){
+            if(i!= 0){
+                if(A[i-1]>=A[i] || B[i-1]>=B[i]){
+                    int leftMin = A.length, rightMin = B.length;
+                    if(i-2<0)
+                    {
+                        swap(A,B,i-1);
+                        leftMin = minSwap(A, B, i, minSwaps+1);
+                        swap(A,B,i);
+                        swap(A,B,i);
+                        rightMin = minSwap(A, B, i+1, minSwaps+1);
+                    }else {
+                        //swap left
+                        if(A[i-2]<=B[i-1] && B[i-2]<=A[i-1]){
+                            swap(A,B,i-1);
+                            leftMin = minSwap(A, B, i, minSwaps+1);
+                            swap(A,B,i);
+                        }
+                        //swap right
+                        if(A[i-1]<=B[i] && B[i-1]<=A[i]){
+                            swap(A,B,i);
+                            rightMin = minSwap(A, B, i+1, minSwaps+1);
+                        }
+                    }
+                    return (rightMin < leftMin) ? rightMin : leftMin;
+                }
+            }
+            i++;
+        }
+        return minSwaps;
+    }
+
+    private void swap(int[] A, int[] B, int i){
+        int temp = A[i];
+        A[i] = B[i];
+        B[i] = temp;
     }
 }

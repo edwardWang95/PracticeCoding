@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485d44a2-fbe6-427c-853f-194bdbac93b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,20 +23,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/FourSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="119">
               <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1930#1931#0" expanded="true" />
-                <element signature="e#2448#2449#0" expanded="true" />
-                <element signature="e#2475#2476#0" expanded="true" />
-                <element signature="e#2401#2402#0" expanded="true" />
-                <element signature="e#2422#2423#0" expanded="true" />
-                <element signature="e#2936#2937#0" expanded="true" />
-                <element signature="e#2962#2963#0" expanded="true" />
-                <element signature="e#2990#2991#0" expanded="true" />
-                <element signature="e#3018#3019#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +35,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="348">
+              <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+              <folding>
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1940#1941#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,11 +82,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="910" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
+    <option name="y" value="22" />
     <option name="width" value="1650" />
-    <option name="height" value="1417" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -127,7 +121,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/edwardwang/Documents/Projects/Personal/PracticeCoding/src/LeetCode/LeetCode.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548563156776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550268001330" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -142,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FourSum">
+  <component name="RunManager" selected="Application.MinimumSwapsToMakeSequenceIncreasing">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -210,6 +204,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MinimumSwapsToMakeSequenceIncreasing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.MinimumSwapsToMakeSequenceIncreasing" />
+      <module name="PracticeCoding" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NextGreaterElement2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.NextGreaterElement2" />
       <module name="PracticeCoding" />
@@ -240,20 +248,6 @@
     </configuration>
     <configuration name="RemoveNthNodeFromEndOfList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.RemoveNthNodeFromEndOfList" />
-      <module name="PracticeCoding" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrimABinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.TrimABinarySearchTree" />
       <module name="PracticeCoding" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -330,19 +324,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TrimABinarySearchTree" />
       <item itemvalue="Application.OnlineStockSpan" />
       <item itemvalue="Application.NextGreaterElement2" />
       <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
       <item itemvalue="Application.FourSum" />
+      <item itemvalue="Application.MinimumSwapsToMakeSequenceIncreasing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinimumSwapsToMakeSequenceIncreasing" />
         <item itemvalue="Application.FourSum" />
         <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
         <item itemvalue="Application.NextGreaterElement2" />
         <item itemvalue="Application.OnlineStockSpan" />
-        <item itemvalue="Application.TrimABinarySearchTree" />
       </list>
     </recent_temporary>
   </component>
@@ -369,10 +363,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="910" y="23" width="1650" height="1417" extended-state="0" />
+    <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13276231" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Nl-Palette" order="3" />
@@ -382,16 +376,15 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981133" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22415094" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34037736" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22386484" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39176345" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.329602" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32830188" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3273495" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,6 +394,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Properties" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -441,6 +435,12 @@
           <line>61</line>
           <properties />
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -632,28 +632,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/FourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="119">
           <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
-            <element signature="e#2936#2937#0" expanded="true" />
-            <element signature="e#2962#2963#0" expanded="true" />
-            <element signature="e#2990#2991#0" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/MinimumSwapsToMakeSequenceIncreasing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="348">
+          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
