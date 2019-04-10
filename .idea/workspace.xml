@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f27c31-80ae-496a-b4f7-7b524c9c7107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sandbox/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/CarFactoryExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sandbox/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/AbstractFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactory.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/AbstractFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="770">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding>
                 <element signature="e#535#536#0" expanded="true" />
                 <element signature="e#562#563#0" expanded="true" />
@@ -42,6 +42,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/CarFactoryExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#1439#1440#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1681#1682#0" expanded="true" />
+                <element signature="e#1742#1743#0" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
+                <element signature="e#1831#1832#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#1969#1970#0" expanded="true" />
+                <element signature="e#2016#2017#0" expanded="true" />
+                <element signature="e#2077#2078#0" expanded="true" />
+                <element signature="e#2112#2113#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -58,6 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Sandbox/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/CarFactory.java" />
+        <option value="$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/CarFactoryExample.java" />
       </list>
     </option>
   </component>
@@ -89,6 +122,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Sandbox" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PracticeCoding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticeCoding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractFactoryExample" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -96,6 +136,9 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,13 +152,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CarFactoryExample">
     <configuration name="AbstractFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sandbox.AbstractFactory" />
+      <option name="MAIN_CLASS_NAME" value="Sandbox.AbstractFactoryExample.AbstractFactory" />
       <module name="PracticeCoding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sandbox.*" />
+          <option name="PATTERN" value="Sandbox.AbstractFactoryExample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarFactoryExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sandbox.AbstractFactoryExample.CarFactoryExample" />
+      <module name="PracticeCoding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sandbox.AbstractFactoryExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,6 +181,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CarFactoryExample" />
         <item itemvalue="Application.AbstractFactory" />
       </list>
     </recent_temporary>
@@ -175,10 +232,10 @@
         <state relative-caret-position="-701" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/AbstractFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="770">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
           <folding>
             <element signature="e#535#536#0" expanded="true" />
             <element signature="e#562#563#0" expanded="true" />
@@ -196,6 +253,34 @@
             <element signature="e#703#704#0" expanded="true" />
             <element signature="e#1934#1935#0" expanded="true" />
             <element signature="e#1990#1991#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sandbox/AbstractFactoryExample/CarFactoryExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
           </folding>
         </state>
       </provider>

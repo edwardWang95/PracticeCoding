@@ -1,4 +1,4 @@
-package Sandbox;
+package Sandbox.AbstractFactoryExample;
 
 /**
  * Abstract Factory: produce family of related objects without specifying their concrete objects.
