@@ -30,9 +30,10 @@ import java.util.List;
 public class OneThreeTwoPattern {
     public static void main(String[] args){
         System.out.println("Leetcode 456. 132 Pattern");
-        test1();
-        test2();
-        test3();
+//        test1();
+//        test2();
+//        test3();
+        test4();
     }
 
     private static void test1(){
@@ -50,7 +51,13 @@ public class OneThreeTwoPattern {
     private static void test3(){
         int [] nums = {-1, 3, 2, 0};
         boolean expected = true;
-        printTestAndResult(2, nums, expected);
+        printTestAndResult(3, nums, expected);
+    }
+
+    private static void test4(){
+        int [] nums = {-2,1,2,-2,1,2};
+        boolean expected = true;
+        printTestAndResult(4, nums, expected);
     }
 
     private static void printTestAndResult(int testNum, int[] nums, boolean expected){
@@ -68,7 +75,7 @@ public class OneThreeTwoPattern {
 
 class OneThreeTwoPatternSolution{
     public boolean find132pattern(int[] nums) {
-        return find132pattern(nums, 0, 0, 0);
+        return find132pattern(nums, 0, 1, 2);
     }
 
     public boolean find132pattern(int[] nums, int i, int j, int k) {
@@ -84,7 +91,7 @@ class OneThreeTwoPatternSolution{
                     ArrayList<Integer> kList = kCandidates(nums, i, j, k);
                     while(kList.size() != 0) {
                         k = kList.get(0);
-                        //printPossSolution(nums, i, j, k);
+                        printPossSolution(nums, i, j, k);
                         if(find132pattern(nums, i, j, k)) return true;
                         kList.remove(0);
                     }
@@ -96,12 +103,12 @@ class OneThreeTwoPatternSolution{
     }
 
     private boolean isSolution(int[] nums, int i, int j, int k){
-        //printPossSolution(nums, i, j, k);
+        printPossSolution(nums, i, j, k);
         return (i < j && j < k) && (nums[i] < nums[k] && nums[k] < nums[j]);
     }
 
     private void printPossSolution(int[] nums, int i, int j, int k){
-        System.out.println(nums[i] + "" + nums[j] + "" + nums[k]);
+        System.out.println("index:" +i+""+j+""+k+"\tValue:"+nums[i] + "" + nums[j] + "" + nums[k]);
     }
 
     private ArrayList<Integer> jCandidates(int[] nums, int i, int j, int k){
