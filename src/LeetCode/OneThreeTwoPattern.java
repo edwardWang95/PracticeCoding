@@ -32,6 +32,7 @@ public class OneThreeTwoPattern {
         System.out.println("Leetcode 456. 132 Pattern");
         test1();
         test2();
+        test3();
     }
 
     private static void test1(){
@@ -42,6 +43,12 @@ public class OneThreeTwoPattern {
 
     private static void test2(){
         int [] nums = {3, 1, 4, 2};
+        boolean expected = true;
+        printTestAndResult(2, nums, expected);
+    }
+
+    private static void test3(){
+        int [] nums = {-1, 3, 2, 0};
         boolean expected = true;
         printTestAndResult(2, nums, expected);
     }
@@ -61,20 +68,23 @@ public class OneThreeTwoPattern {
 
 class OneThreeTwoPatternSolution{
     public boolean find132pattern(int[] nums) {
-        return find132pattern(nums, 0, 1, 2);
+        return find132pattern(nums, 0, 0, 0);
     }
 
     public boolean find132pattern(int[] nums, int i, int j, int k) {
         if(isSolution(nums, i, j, k)){
             return true;
         }else{
-            for(;i<nums.length-2;i++){
+            for(;i<nums.length-1;i++){
+                j = i + 1;
+                k = j + 1;
                 ArrayList<Integer> jList = jCandidates(nums, i, j, k);
                 while(jList.size() != 0){
                     j = jList.get(0);
                     ArrayList<Integer> kList = kCandidates(nums, i, j, k);
                     while(kList.size() != 0) {
                         k = kList.get(0);
+                        //printPossSolution(nums, i, j, k);
                         if(find132pattern(nums, i, j, k)) return true;
                         kList.remove(0);
                     }
@@ -86,13 +96,18 @@ class OneThreeTwoPatternSolution{
     }
 
     private boolean isSolution(int[] nums, int i, int j, int k){
+        //printPossSolution(nums, i, j, k);
         return (i < j && j < k) && (nums[i] < nums[k] && nums[k] < nums[j]);
+    }
+
+    private void printPossSolution(int[] nums, int i, int j, int k){
+        System.out.println(nums[i] + "" + nums[j] + "" + nums[k]);
     }
 
     private ArrayList<Integer> jCandidates(int[] nums, int i, int j, int k){
         ArrayList<Integer> candidates = new ArrayList<>();
         if(i >= j || j >= k) return candidates;
-        for(;i < j && j < k; j++){
+        for(;i < j && j < k && j < nums.length - 1; j++){
             if(nums[i] < nums[j] && nums[k] < nums[j]) candidates.add(j);
         }
         return candidates;
@@ -101,8 +116,8 @@ class OneThreeTwoPatternSolution{
     private ArrayList<Integer> kCandidates(int[] nums, int i, int j, int k){
         ArrayList<Integer> candidates = new ArrayList<>();
         if(i >= k || j >= k) return candidates;
-        for(;k < nums.length; k++){
-            if(nums[i] < nums[k] && nums[k] < nums[j]) candidates.add(j);
+        for(;k > j && k < nums.length; k++){
+            if(nums[i] < nums[k] && nums[k] < nums[j]) candidates.add(k);
         }
         return candidates;
     }
