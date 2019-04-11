@@ -68,11 +68,11 @@ class OneThreeTwoPatternSolution{
         if(isSolution(nums, i, j, k)){
             return true;
         }else{
-            for(;i<nums.length;i++){
-                List<Integer> jList = jCandidates(nums, i, j, k);
+            for(;i<nums.length-2;i++){
+                ArrayList<Integer> jList = jCandidates(nums, i, j, k);
                 while(jList.size() != 0){
                     j = jList.get(0);
-                    List<Integer> kList = kCandidates(nums, i, j, k);
+                    ArrayList<Integer> kList = kCandidates(nums, i, j, k);
                     while(kList.size() != 0) {
                         k = kList.get(0);
                         if(find132pattern(nums, i, j, k)) return true;
@@ -89,15 +89,21 @@ class OneThreeTwoPatternSolution{
         return (i < j && j < k) && (nums[i] < nums[k] && nums[k] < nums[j]);
     }
 
-    private List<Integer> jCandidates(int[] nums, int i, int j, int k){
-        List<Integer> candidates = new ArrayList<>();
-
+    private ArrayList<Integer> jCandidates(int[] nums, int i, int j, int k){
+        ArrayList<Integer> candidates = new ArrayList<>();
+        if(i >= j || j >= k) return candidates;
+        for(;i < j && j < k; j++){
+            if(nums[i] < nums[j] && nums[k] < nums[j]) candidates.add(j);
+        }
         return candidates;
     }
 
-    private List<Integer> kCandidates(int[] nums, int i, int j, int k){
-        List<Integer> candidates = new ArrayList<>();
-
+    private ArrayList<Integer> kCandidates(int[] nums, int i, int j, int k){
+        ArrayList<Integer> candidates = new ArrayList<>();
+        if(i >= k || j >= k) return candidates;
+        for(;k < nums.length; k++){
+            if(nums[i] < nums[k] && nums[k] < nums[j]) candidates.add(j);
+        }
         return candidates;
     }
 }
