@@ -17,9 +17,9 @@ import java.util.Queue;
  * Dynamic
  * Hint: THe values of dynamic programming matrix should be Boolean not numeric.
  */
-public class DyanmicProgramming {
+public class DynamicProgramming {
     private String X,Y,Z;
-    public DyanmicProgramming(){
+    public DynamicProgramming(){
         X = "";
         Y = X;
         Z = Y;
