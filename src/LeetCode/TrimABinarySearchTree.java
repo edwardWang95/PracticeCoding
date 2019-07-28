@@ -1,5 +1,7 @@
 package LeetCode;
 
+import LeetCode.ReUsedObjects.TreeNode;
+
 /**
  * Created by edwardwang on 1/7/19.
  */
