@@ -28,6 +28,8 @@ public class TreeNode {
         if(treeArray.length <= 0) return;
         val = treeArray[0];
         createBinaryTreeFromArrayOrder(this, treeArray, 1);
+        System.out.println("Final Result");
+        printBFS();
     }
 
     /**
@@ -37,13 +39,15 @@ public class TreeNode {
      * */
     private void createBinaryTreeFromArrayOrder(TreeNode root, Integer[] order,
                                                     int nodeIndex){
-        if(nodeIndex == order.length - 1) return;
+        if(nodeIndex == order.length) return;
         TreeNode node = new TreeNode(order[nodeIndex]);
         int parentIndex = getBinaryTreeParentIndex(nodeIndex);
-        TreeNode parentNode = binarySearch(root, order[parentIndex]);
+        TreeNode parentNode = bfs(root, order[parentIndex]);
         if(isLeftChild(nodeIndex))parentNode.left = node;
         else parentNode.right = node;
+
         printBFS();
+
         createBinaryTreeFromArrayOrder(root, order, nodeIndex + 1);
     }
 
@@ -57,21 +61,36 @@ public class TreeNode {
      * - e.g. layer 2 start 2^2 = 4 - 1 = 3
      * - e.g. layer 3 start 2^3 = 8 - 1 = 7
      * */
-    private int getBinaryTreeParentIndex(int nodeIndex){
-        int currentLayer = (int)Math.ceil(Math.log(nodeIndex));
-        int indexAwayFromLayerStart = nodeIndex - (int)Math.pow(currentLayer,2);
-        int parentLengthAwayFromBeginningLayer = indexAwayFromLayerStart/2;
-        return (int)Math.pow(indexAwayFromLayerStart, 2) - 1 +
-                parentLengthAwayFromBeginningLayer;
+    private int getBinaryTreeParentIndex(int nodeIndex) {
+        // index begins at 0 therefore need to subtract 1 when doing layer of power 2
+        int index = nodeIndex + 1;
+        // base 2 log
+        int currentLayer = (int) Math.floor(Math.log(index) / Math.log(2));
+        int indexFromLayerStart = index - (int) Math.pow(2, currentLayer);
+        int parentIndexAwayFromLayerStart = indexFromLayerStart / 2;
+        int parentLayerStartIndex = (int)Math.pow(2, currentLayer - 1) - 1;
+        return parentLayerStartIndex + parentIndexAwayFromLayerStart;
     }
-
 
     /**
      * Given:Binary tree node and value to find
      * Then: Return node that matches value
      * Time: O(logN)
      * */
+    private TreeNode bfs(TreeNode node, int val){
+        if(node.val == val) return node;
+        Queue<TreeNode> queue = new LinkedList<>();
+        if(node.left != null) queue.add(node.left);
+        if(node.right != null) queue.add(node.right);
+        while(!queue.isEmpty()){
+            bfs(queue.peek(), val);
+            queue.remove();
+        }
+        return null;
+    }
+
     private TreeNode binarySearch(TreeNode node, int val){
+        if(node == null) return null;
         if(node.val == val) return node;
         else if(node.val < val) return binarySearch(node.right, val);
         else return binarySearch(node.left, val);
@@ -92,16 +111,17 @@ public class TreeNode {
      * Then: Print out tree representation using BFS
      * */
     private void printBFS(){
-        bfs(this);
+        printBFS(this);
+        System.out.println();
     }
 
-    private void bfs(TreeNode node){
+    private void printBFS(TreeNode node){
         System.out.println(node.val + " ");
         Queue<TreeNode> queue = new LinkedList<>();
         if(node.left != null) queue.add(node.left);
         if(node.right != null) queue.add(node.right);
         while(!queue.isEmpty()){
-            bfs(queue.peek());
+            bfs(queue.peek(), val);
             queue.remove();
         }
     }

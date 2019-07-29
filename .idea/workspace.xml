@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f27c31-80ae-496a-b4f7-7b524c9c7107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNodeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeCoding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeCoding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/MaximumBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/MergeTwoBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-              </folding>
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -37,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="264">
               <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,18 +38,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+            <state relative-caret-position="387">
+              <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3360#3361#0" expanded="true" />
-                <element signature="e#3391#3392#0" expanded="true" />
-                <element signature="e#3147#3148#0" expanded="true" />
-                <element signature="e#3172#3173#0" expanded="true" />
-                <element signature="e#3598#3599#0" expanded="true" />
-                <element signature="e#3630#3631#0" expanded="true" />
-                <element signature="e#3768#3769#0" expanded="true" />
+                <element signature="e#3632#3633#0" expanded="true" />
+                <element signature="e#3673#3674#0" expanded="true" />
+                <element signature="e#4299#4300#0" expanded="true" />
+                <element signature="e#4331#4332#0" expanded="true" />
+                <element signature="e#4461#4462#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="112" column="133" selection-start-line="112" selection-start-column="133" selection-end-line="112" selection-end-column="133" />
             </state>
           </provider>
         </entry>
@@ -68,12 +64,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="264">
               <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,9 +107,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1080" />
-    <option name="height" value="877" />
+    <option name="x" value="-1088" />
+    <option name="y" value="-750" />
+    <option name="width" value="1081" />
+    <option name="height" value="1519" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -267,39 +262,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 17m 10s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 27m 17s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 17m 27s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 27m 23s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 18m 03s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 27m 28s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 18m 48s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 28m 40s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 18m 53s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 31m 52s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 19m 02s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 32m 25s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 19m 57s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 33m 19s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 21m 08s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 34m 09s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 23m 46s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 35m 46s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 17h 24m 46s.xml">
+    <history-entry file="TreeNodeTest_test1 - 2019.07.28 at 20h 43m 12s.xml">
       <configuration name="TreeNodeTest.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="-1080" y="-1097" width="1080" height="1897" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22757319" />
@@ -311,15 +306,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41910827" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47515923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35401663" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47479224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32963988" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -341,9 +336,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java</url>
-          <line>41</line>
+          <line>44</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -447,27 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/TrimABinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -482,31 +456,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/CounsinsInBinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNodeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="264">
           <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/junit/platform/junit-platform-commons/1.5.1/junit-platform-commons-1.5.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="112" column="133" selection-start-line="112" selection-start-column="133" selection-end-line="112" selection-end-column="133" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/ReUsedObjects/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+        <state relative-caret-position="387">
+          <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3360#3361#0" expanded="true" />
-            <element signature="e#3391#3392#0" expanded="true" />
-            <element signature="e#3147#3148#0" expanded="true" />
-            <element signature="e#3172#3173#0" expanded="true" />
-            <element signature="e#3598#3599#0" expanded="true" />
-            <element signature="e#3630#3631#0" expanded="true" />
-            <element signature="e#3768#3769#0" expanded="true" />
+            <element signature="e#3632#3633#0" expanded="true" />
+            <element signature="e#3673#3674#0" expanded="true" />
+            <element signature="e#4299#4300#0" expanded="true" />
+            <element signature="e#4331#4332#0" expanded="true" />
+            <element signature="e#4461#4462#0" expanded="true" />
           </folding>
         </state>
       </provider>
